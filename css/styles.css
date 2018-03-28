@@ -4,9 +4,9 @@
 	box-sizing: border-box;
 }
 
-header, main, .left, .projects, .upper-activities, .lower-activities, .upper-social, .lower-social, footer {
+/* header, main, .left, .projects, .upper-activities, .lower-activities, .upper-social, .lower-social, footer {
 	border: 1px solid red;
-}
+} */
 
 
 body {
@@ -42,3 +42,126 @@ body {
 	font-size: 24px;
 }
 
+.left {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.upper-activities {
+	order: 1;
+	width: 100%;
+}
+
+.projects {
+	order: 2;
+}
+
+.lower-activities {
+	order: 3;
+}
+
+.upper-activities h4 {
+	border-bottom: 1px dashed grey;
+	margin-bottom: 10px;
+}
+
+.upper-activities .personal-photo {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 150px;
+	border: 2px solid black;
+	border-radius: 100%;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.upper-activities .nav p {
+	width: 29.3%;
+	padding: 15px 0;
+	margin: 0 2%;	
+	float: left;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #63cc63;
+	color: white;
+	font-weight: bold;
+}
+
+#job-availablity {
+	clear: both;
+	border: 1px solid black;
+	border-radius: 13px;
+	margin-top: 72px;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding: 12px;
+}
+
+#job-availablity p {
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 2px;
+	display: inline-block;
+	background-color: pink;
+	color: white;
+}
+
+#job-availablity p:last-child {
+	margin-top: 8px;
+}
+
+.sign {
+	border: 1px solid black;
+	border-radius: 13px;
+	margin-top: 12px;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding: 12px;
+}
+
+.sign img {
+	width: 100px;
+	display: block;
+	margin: auto;
+
+}
+
+.upper-activities .feature {
+	border: 1px solid black;
+	border-radius: 13px;
+	margin-top: 12px;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-bottom: 20px;
+	padding: 12px;
+	position: relative;
+}
+
+.upper-activities .feature p:first-of-type {
+/* 	border: 1px dashed red; */
+	position: absolute;
+	top: 15px;
+	left: 84px;
+	font-size: 0.6em;
+	color: grey;
+}
+
+.upper-activities .feature .img-container {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid red;
+}
+
+.upper-activities .feature img {
+	margin-top: -50%;
+	margin-left: -50%;
+	border: 1px dashed red;
+}
+
+.upper-activities .feature p:last-of-type {
+	margin-top: 12px;
+}
