@@ -1,0 +1,44 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header, main, .left, .projects, .upper-activities, .lower-activities, .upper-social, .lower-social, footer {
+	border: 1px solid red;
+}
+
+
+body {
+	font-family: courier, monospace;
+}
+
+.inner {
+	width: 100%;
+}
+
+.header-inner div {
+	width: 100%;
+	padding: 15px 0;
+}
+
+.header-inner div img {
+	display: block;
+	width: 90px;
+	margin: 0 auto 15px auto;
+}
+
+.header-inner div h2 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.header-inner div h3 {
+	text-align: center;
+}
+
+.header-inner div h3 span:first-child {
+	font-weight: bold;
+	font-size: 24px;
+}
+
