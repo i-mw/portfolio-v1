@@ -62,11 +62,6 @@ body {
 	order: 3;
 }
 
-.upper-activities h4 {
-	border-bottom: 1px dashed grey;
-	margin-bottom: 10px;
-}
-
 .upper-activities .personal-photo {
 	display: block;
 	margin-right: auto;
@@ -91,16 +86,28 @@ body {
 	font-weight: bold;
 }
 
+.upper-activities .nav::after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	hight: 0;
+}
+
 .upper-activities .nav p:first-child, .upper-activities .nav p:nth-child(2) {
 	margin-right: 6%;
 }
 
-#job-availablity {
-	clear: both;
+.activities .card {
 	border: 1px solid black;
 	border-radius: 13px;
-	margin-top: 72px;
+	margin-top: 12px;
 	padding: 12px;
+}
+
+.activities .card h4 {
+	border-bottom: 1px dashed grey;
+	margin-bottom: 10px;
 }
 
 #job-availablity p {
@@ -116,14 +123,6 @@ body {
 	margin-top: 8px;
 }
 
-.sign {
-	border: 1px solid black;
-	border-radius: 13px;
-	margin-top: 12px;
-
-	padding: 12px;
-}
-
 .sign img {
 	width: 100px;
 	display: block;
@@ -132,11 +131,7 @@ body {
 }
 
 .upper-activities .feature {
-	border: 1px solid black;
-	border-radius: 13px;
-	margin-top: 12px;
 	margin-bottom: 20px;
-	padding: 12px;
 	position: relative;
 }
 
@@ -168,7 +163,7 @@ body {
 }
 
 .projects {
-	border: 1px solid red;
+/* 	border: 1px solid red; */
 }
 
 .projects .card {
@@ -274,4 +269,74 @@ body {
 	color: grey;
 	background-color: white;
 /* 	border: 1px solid grey; */
+}
+
+.lower-activities {
+/* 	border: 1px solid red; */
+	width: 100%;
+}
+
+.skills > div, .langs > div {
+/* 	border: 1px dashed yellow; */
+	margin-bottom: 15px;
+
+}
+
+.skills > div:after, .langs > div:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	hight: 0;
+	overflow: hidden;
+}
+
+.skills > div:last-of-type, .langs > div:last-of-type {
+	margin-bottom: 0;
+}
+
+.skills > div > p, .langs > div > p  {
+	float: left;
+	width: 20%;
+	text-align: center;
+/* 	border: 1px dashed red; */
+}
+
+.skills .meter, .langs .meter {
+	float: left;
+	width: 60%;
+	height: 18px;
+	background-color: red;
+	border-radius: 4px;
+}
+
+.skills .meter div, .langs .meter div {
+	display: inline-block;
+	height: 18px;
+	background-color: black;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.skills .html .meter div {
+	width: 78%;
+}
+
+.skills .css .meter div {
+	width: 70%;
+}
+
+.skills .js .meter div {
+	width: 60%;
+}
+
+.langs .arabic .meter div {
+	width: 92%;
+}
+
+.langs .english .meter div {
+	width: 80%;
+}
+
+.langs .german .meter div {
+	width: 20%;
 }
