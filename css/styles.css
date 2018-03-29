@@ -62,7 +62,7 @@ body {
 	order: 3;
 }
 
-.upper-activities .personal-photo {
+.upper-activities .personal-photo, .social .personal-photo {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -130,12 +130,12 @@ body {
 
 }
 
-.upper-activities .feature {
+.upper-activities .feature, .social .feature {
 	margin-bottom: 20px;
 	position: relative;
 }
 
-.upper-activities .feature p:first-of-type {
+.upper-activities .feature p:first-of-type, .social .feature p:first-of-type {
 /* 	border: 1px dashed red; */
 	position: absolute;
 	top: 15px;
@@ -144,21 +144,21 @@ body {
 	color: grey;
 }
 
-.upper-activities .feature .img-container {
+.upper-activities .feature .img-container, .social .feature .img-container {
 	width: 100%;
 	height: 200px;
 	overflow: hidden;
 	border: 1px solid red;
 }
 
-.upper-activities .feature img {
+.upper-activities .feature img, .social .feature img {
 	width: 100%;
 	margin-top: -45%;
 /* 	margin-left: -50%; */
 /* 	border: 1px dashed red; */
 }
 
-.upper-activities .feature p:last-of-type {
+.upper-activities .feature p:last-of-type, .social .feature p:last-of-type {
 	margin-top: 12px;
 }
 
@@ -274,6 +274,7 @@ body {
 .lower-activities {
 /* 	border: 1px solid red; */
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .skills > div, .langs > div {
@@ -339,4 +340,56 @@ body {
 
 .langs .german .meter div {
 	width: 20%;
+}
+
+.upper-social {
+/* 	border: 1px dashed red; */
+}
+
+.lower-social {
+/* 	border: 1px dashed red; */
+}
+
+.social .personal-photo, .social .feature {
+	display: none;
+}
+
+.social .card {
+	border: 1px solid black;
+	border-radius: 13px;
+	padding: 12px;
+	margin-bottom: 15px;
+}
+
+.social .card h4 {
+	border-bottom: 1px dashed grey;
+	margin-bottom: 10px;
+}
+
+.social .icons-container i {
+	border: 1px solid grey;
+	background-color: grey;
+	color: white;
+/* 	padding-top: 5px; */
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 33.5px;
+	transition-property: color background-color;
+	transition-duration: 500ms;
+}
+
+.social .icons-container i:hover {
+	color: grey;
+	background-color: white;
+/* 	border: 1px solid grey; */
+}
+
+#profiles {
+	border: 1px solid black;
+	border-radius: 13px;
+	padding: 12px;
+	margin-bottom: 15px;
 }
