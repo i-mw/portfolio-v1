@@ -18,6 +18,10 @@ body {
 	padding: 0 2% 0 2%;
 }
 
+header {
+	background-color: grey;
+}
+
 .header-inner div {
 	width: 100%;
 	padding: 15px 0;
@@ -52,14 +56,21 @@ body {
 .upper-activities {
 	order: 1;
 	width: 100%;
+	background-color: pink;
 }
 
 .projects {
 	order: 2;
+	background-color: red;
 }
 
 .lower-activities {
 	order: 3;
+	background-color: pink;
+}
+
+.social {
+	background-color: green;
 }
 
 .upper-activities .personal-photo, .social .personal-photo {
@@ -410,7 +421,7 @@ footer .footer-inner > div {
 
 footer .quote {
 	margin-top: 0 !important;
-	border: 1px dashed red;
+/* 	border: 1px dashed red; */
 }
 
 footer .host p {
