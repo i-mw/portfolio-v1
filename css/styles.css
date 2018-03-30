@@ -66,7 +66,7 @@ header {
 
 .lower-activities {
 	order: 3;
-	background-color: pink;
+	background-color: yellow;
 }
 
 .social {
@@ -233,7 +233,7 @@ header {
 }
 
 .projects .project a:nth-child(2){
-/* 	border: 1px dashed red; */
+/* 	border: 1px dashed black; */
 	position: absolute;
 	bottom: 5px;
 	left: 5px;
