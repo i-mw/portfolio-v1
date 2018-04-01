@@ -173,6 +173,12 @@ header {
 	margin-top: 12px;
 }
 
+.feature .img-container {
+	border: 1px dashed black;
+	background: url(../img/photo.PNG) center center/cover no-repeat scroll;
+
+}
+
 .projects {
 /* 	border: 1px solid red; */
 }
@@ -210,16 +216,68 @@ header {
 	overflow: hidden;
 	box-shadow: 1px 1px 1px red;
 	transition: box-shadow 500ms;
+
 }
+
+.projects .project a:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#write .project:first-child {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#write .project:nth-child(2) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#write .project:nth-child(3) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#write .project:nth-child(4) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#design .project:first-child {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#design .project:nth-child(2) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#develop .project:first-child {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#develop .project:nth-child(2) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#develop .project:nth-child(3) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#develop .project:nth-child(4) {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#draw .project:first-child {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
+#cool-stuff .project:first-child {
+	background: url(../img/photo.PNG) center center/cover no-repeat;	
+}
+
 
 .projects .project:hover {
 	box-shadow: 2px 2px 1px green;
-}
-
-
-.projects .project img {
-	width: 100%;
-	margin-top: -50%;
 }
 
 .projects .project a:first-child::after {
@@ -229,7 +287,7 @@ header {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(2,2,2,0.5);
+	background-color: rgba(2,2,2,0.3);
 }
 
 .projects .project a:nth-child(2){
