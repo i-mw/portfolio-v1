@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "mwfont";
+  src:url("fonts/mwfont.eot");
+  src:url("fonts/mwfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/mwfont.woff") format("woff"),
+    url("fonts/mwfont.ttf") format("truetype"),
+    url("fonts/mwfont.svg#mwfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "mwfont" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "mwfont" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sasapost:before {
+  content: "\73";
+}
+.icon-codingame:before {
+  content: "\63";
+}
+.icon-codewars:before {
+  content: "\77";
+}
+.icon-askfm:before {
+  content: "\66";
+}
+.icon-arageek:before {
+  content: "\67";
+}
+.icon-apen:before {
+  content: "\70";
+}
+.icon-mw:before {
+  content: "\6d";
+}
+.icon-mw-bold:before {
+  content: "\32";
+}
+.icon-code:before {
+  content: "\61";
+}
+.icon-spotify:before {
+  content: "\64";
+}
+.icon-imdb:before {
+  content: "\68";
+}
+.icon-heart:before {
+  content: "\62";
+}
+.icon-heart-o:before {
+  content: "\69";
+}
+.icon-rotten:before {
+  content: "\6a";
+}

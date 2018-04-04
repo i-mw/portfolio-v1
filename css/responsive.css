@@ -3,7 +3,7 @@
   .left {
     flex-direction: column;
     height: 1850px;
-/*     align-items: flex-start; */
+    /*     align-items: flex-start; */
   }
 
   .projects {
@@ -67,8 +67,16 @@
 
 @media screen and (min-width: 900px){
 
+  header {
+    padding-bottom: 200px;
+  }
+
+  main {
+    margin-top: -200px;
+  }
+
   .main-inner {
-    border: 2px dashed black;
+/*     border: 2px dashed black; */
   }
 
   .main-inner::after {
