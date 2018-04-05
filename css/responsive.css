@@ -65,6 +65,55 @@
      display: block; 
   } */
 
+
+/*
+*
+*
+*footer
+*
+*
+*/
+
+  footer .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    height: 300px;
+  }
+
+  footer .footer-inner > div {
+    margin: 0;
+  }
+
+  footer .quote {
+    order: 1;
+    height: 50%;
+    width: 50% !important;
+    padding: 45px 50px 0;
+  }
+
+  footer .contact {
+    order: 2;
+    height: 50%;
+    width: 50% !important;    
+    padding: 50px 50px 0;
+  }
+
+  footer .host {
+    order: 3;
+    height: 50%;
+    width: 50% !important;    
+    padding: 50px 50px 0;
+  }
+
+  footer .credit {
+    order: 4;
+    height: 50%;
+    width: 50% !important;
+    padding: 30px 50px 0;
+  }
+
 }
 
 
@@ -97,7 +146,7 @@
   .left {
     width: 75%;
     float: left;
-    height: 1900px;
+/*     height: 1900px; */
 /*     border: 2px dashed red; */
   }
 
@@ -128,8 +177,56 @@
 /*     border: 2px dashed red; */
   }
   
-    .projects .project {
+   .projects .project {
     width: 30%;
+  }
+
+
+
+/*
+*
+*
+*footer
+*
+*
+*/
+
+  footer .footer-inner {
+    height: 200px;
+  }
+
+  footer .footer-inner > div {
+/*     border: 1px dashed red; */
+  }
+
+  footer .quote {
+    order: 2;
+    height: 50%;
+    width: 50% !important;
+    padding: 10px 20px 0;
+  }
+
+  footer .contact {
+    order: 1;
+    height: 100%;
+    width: 25% !important;    
+    padding: 140px 6px 0;
+  }
+
+  footer .host {
+    order: 4;
+    height: 100%;
+    width: 25% !important;    
+    padding: 130px 10px 0;
+  }
+
+  footer .credit {
+    order: 3;
+    height: 50%;
+    width: 50% !important;
+    padding-right: 10px;
+    padding-left: 10px;
+    
   }
 
 
