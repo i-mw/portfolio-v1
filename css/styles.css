@@ -25,6 +25,15 @@ body {
 	padding: 0 2% 0 2%;
 }
 
+
+/*
+*
+*
+*header
+*
+*
+*/
+
 header {
 	background: url(../img/mountains.png) center bottom/cover no-repeat;
 /* 	z-index: 2; */
@@ -65,6 +74,15 @@ header span {
 	font-size: 24px;
 }
 
+
+/*
+*
+*
+*main container
+*
+*
+*/
+
 main {
 /* 	bacground-position: 200px 200px, 200px 200px; */
 	margin-top: -150px;
@@ -100,6 +118,15 @@ main {
 .social {
 	background-color: green;
 }
+
+
+/*
+*
+*
+*upper activities pane
+*
+*
+*/
 
 .upper-activities .personal-photo, .social .personal-photo {
 	display: block;
@@ -228,6 +255,15 @@ main {
 .feature .img-container:hover {
 	box-shadow: 1px 1px 1px green;
 }
+
+
+/*
+*
+*
+*projects pane
+*
+*
+*/
 
 .projects {
 /* 	border: 1px solid red; */
@@ -401,12 +437,13 @@ main {
 }
 
 
-
-
-
-
-
-
+/*
+*
+*
+*lower activities pane
+*
+*
+*/
 
 .lower-activities {
 /* 	border: 1px solid red; */
@@ -488,9 +525,13 @@ main {
 }
 
 
-
-
-
+/*
+*
+*
+*social pane
+*
+*
+*/
 
 .upper-social {
 /* 	border: 1px dashed red; */
@@ -555,6 +596,14 @@ main {
 	margin-right: 2px;
 }
 
+
+/*
+*
+*
+*footer
+*
+*
+*/
 
 footer {
 /* 	border: 1px dashed red; */
