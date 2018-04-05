@@ -52,12 +52,19 @@ header span {
 	padding: 15px 0;
 }
 
-.header-inner div img {
+.header-inner div .icon-mw {
+	text-align: center;
 	display: block;
 /* 	width: 90px; */
-	margin: 0 auto 15px auto;
-	background-color: rgba(54, 90, 102, 0.2);
+	margin: 0 auto 15px;
+/* 	background-color: rgba(54, 90, 102, 0.2); */
 /* 	border-radius: 50%; */
+}
+
+.header-inner div .icon-mw::before {
+	color: #D8D8D0;
+	font-size: 6.8em;
+	background-color: rgba(54, 90, 102, 0.2);
 }
 
 .header-inner div h1 {
