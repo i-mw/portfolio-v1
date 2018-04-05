@@ -78,5 +78,8 @@
   content: "\69";
 }
 .icon-rotten:before {
+  content: "\65";
+}
+.icon-cv:before {
   content: "\6a";
 }

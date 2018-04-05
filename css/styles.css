@@ -38,16 +38,17 @@ header {
 	background: url(../img/mountains.png) center bottom/cover no-repeat;
 /* 	z-index: 2; */
 /* 	border: 1px dashed rgba(23, 42, 48, 0.8); */
-	padding-bottom: 150px;
+/* 	padding-bottom: 150px; */
 /* 	opacity: 1; */
 	color: #D8D8D0;
+	padding-bottom: 150px;
 }
 
 header span {
 	background-color: rgba(54, 90, 102, 0.2);
 }
 
-.header-inner div {
+.header-inner > div {
 	width: 100%;
 	padding: 15px 0;
 }
@@ -81,6 +82,37 @@ header span {
 	font-size: 24px;
 }
 
+.nav {
+/* 	border: 1px dashed red; */
+	text-align: center;
+	margin-top: 15px;
+}
+
+.nav a {
+/* 	display: inline-block; */
+	margin-right: 15px;
+}
+
+.nav i {
+	color: #D8D8D0;
+	font-size: 2em;
+	width: 30px;
+	height: 30px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.nav a:nth-child(3){
+	margin-right: 0;
+}
+
+.nav a:nth-child(3) i {
+	font-size: 1.75em;
+}
+
+.nav a:nth-child(3) i::before {
+	line-height: 32px;
+}
 
 /*
 *
@@ -146,37 +178,7 @@ main {
 	margin-bottom: 12px;
 }
 
-.upper-activities .nav a {
-	display: block;
-	width: 29.3%;
-	padding: 15px 0;
-	margin-left: 3%;
-/* 	margin: 0 2%;	 */
-	float: left;
-	text-align: center;
-	border: 1px solid black;
-	border-radius: 5px;
-	background-color: #63cc63;
-	color: white;
-	font-weight: bold;
-/* 	border: 1px dashed red; */
-}
 
-.upper-activities .nav a p {
-	width: 100%;
-}
-
-.upper-activities .nav::after {
-	content: "";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	hight: 0;
-}
-
-.upper-activities .nav p:first-child, .upper-activities .nav p:nth-child(2) {
-	margin-right: 6%;
-}
 
 .activities .card {
 	border: 1px solid black;
