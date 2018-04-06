@@ -230,6 +230,58 @@
   }
 
 
+/*
+*
+*
+*fixation
+*
+*
+*/
+
+/*
+* second state: fixed to the screen
+*/
+
+  .upper-activities-fixed {
+    position: fixed;
+    left: 50%;
+    bottom: 385px;
+    width: 24% !important;
+    margin-top: 0 !important;
+  }
+
+  .lower-activities-fixed {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 24% !important;
+    margin-bottom: 0;
+  }
+  
+  .projects-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 48% !important ;
+  }
+
+
+
+/*
+* third state: scroll near the footer
+*/
+
+  .main-inner-scroll-down {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .left-scroll-down {
+    justify-content: flex-end;
+  }
+
+
+
 
 
 }

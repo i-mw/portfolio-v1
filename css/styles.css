@@ -204,6 +204,11 @@ main {
 	padding: 12px;
 }
 
+.upper-activities .card:first-of-type {
+	margin-top: 0 !important;
+
+}
+
 .activities .card h4 {
 	border-bottom: 1px dashed grey;
 	margin-bottom: 10px;
@@ -300,6 +305,10 @@ main {
 	border-radius: 13px;
 	padding: 12px;
 	margin-bottom: 15px;
+}
+
+.projects .card:last-of-type {
+	margin-bottom: 0;
 }
 
 .projects .card h3 {
@@ -474,7 +483,7 @@ main {
 .lower-activities {
 /* 	border: 1px solid red; */
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 20/px;
 }
 
 .skills > div, .langs > div {
@@ -604,7 +613,7 @@ main {
 	border: 1px solid black;
 	border-radius: 13px;
 	padding: 0 12px 12px 12px;
-	margin-bottom: 15px;
+/* 	margin-bottom: 15px; */
 }
 
 #profiles .icons-container {
