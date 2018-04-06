@@ -48,6 +48,23 @@ header span {
 	background-color: rgba(54, 90, 102, 0.2);
 }
 
+header h3 a {
+/* 	border: 1px dashed white; */
+	background-color: rgba(54, 90, 102, 0.2);
+	text-decoration: none;
+	color: #D8D8D0;
+	border-bottom: 1px dotted #D8D8D0;
+}
+
+header h3 a:hover {
+	border-bottom: 1px solid #D8D8D0;
+}
+
+header h3 a:active {
+	color: blue;
+	border-bottom: 1px solid blue;
+}
+
 .header-inner > div {
 	width: 100%;
 	padding: 15px 0;
