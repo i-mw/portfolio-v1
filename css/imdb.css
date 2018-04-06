@@ -1,0 +1,14 @@
+.ipl-detail-block__poster {
+/*   border: 1px dashed red ; */
+  width: 55px !important;
+}
+
+.ipl-detail-block__title{
+/*   border: 1px dashed red; */
+  font-size: 15px !important;
+}
+
+.lister-list .list-item-block-link{
+/*   border: 1px dashed red; */
+  padding: 1px 8px;
+}

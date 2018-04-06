@@ -602,6 +602,28 @@ main {
 	margin-right: 2px;
 }
 
+/*
+*widgets
+*/
+
+
+
+.goodreads-stream, .imdb-stream {
+/* 	width: 100%; */
+/* 	border: 1px dashed red */
+}
+
+.goodreads-stream iframe, .imdb-stream iframe {
+/* 	border: 3px solid blue !important; */
+	width: 100%;
+	height: 300px;
+	border: none;
+}
+
+.goodreads-stream iframe {
+	height: 333px;
+}
+
 
 /*
 *
