@@ -119,15 +119,15 @@ header h3 a:active {
 	display: inline-block;
 }
 
-.nav a:nth-child(3){
+.nav a:nth-child(3) {
 	margin-right: 0;
 }
 
-.nav a:nth-child(3) i {
+.nav a:nth-child(3) i, .nav a:first-child i {
 	font-size: 1.75em;
 }
 
-.nav a:nth-child(3) i::before {
+.nav a:nth-child(3) i::before, .nav a:first-child i::before {
 	line-height: 32px;
 }
 
