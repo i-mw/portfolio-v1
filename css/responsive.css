@@ -1,79 +1,102 @@
+/***** TINY SCREENS *****/
 @media screen and (max-width: 170px) {
   .upper-activities .personal-photo, .social .personal-photo {
     width: 100px;
   }
 }
 
-
+/***** TABLET *****/
 @media screen and (min-width: 700px) {
-  
+
+  /*
+  *
+  *header
+  *
+  */
+
+
+  /*
+  *
+  *main container
+  *
+  */
+
+  /*
+  *left pane
+  */
   .left {
     flex-direction: column;
     height: 1660px;
     /*     align-items: flex-start; */
   }
 
+  /* projects pane */
   .projects {
     order: 1;
     width: 66.6%;
   }
-
   .projects .projects-container {
-    text-align: left;    
+    text-align: left;
   }
-
   .projects .project {
     width: 47%;
   }
-
   .projects .project a:nth-child(2) {
     text-align: center;
   }
 
+  /* upper activities pane */
   .upper-activities {
     order: 2;
     width: 33.3%;
-/*     flex-shrink: -1; */
+    /*     flex-shrink: -1; */
   }
 
+  /* lower activities pane */
   .lower-activities {
     order: 3;
     width: 33.3%;
-    
   }
 
+  /*
+  *right pane
+  */
   .right {
     width: 100%;
     overflow: auto;
     background-color: yellow;
   }
 
+  /* upper social pane */
   .upper-social {
     width: 50%;
     float: left;
   }
 
+  /* lower social pane */
   .lower-social {
     width: 50%;
     float: left;
   }
+    /*   .right::after {
+      content: ".";
+      visibility: hidden;
+      height: 0;
+       display: block;
+    } */
+    /*
+  *
+  *
+  *footer
+  *
+  *
+  */
 
-/*   .right::after {
-    content: ".";
-    visibility: hidden;
-    height: 0;
-     display: block; 
-  } */
-
-
-/*
-*
-*
-*footer
-*
-*
-*/
-
+  /*
+  *
+  *footer
+  *
+  */
   footer .footer-inner {
     display: flex;
     flex-wrap: wrap;
@@ -81,49 +104,41 @@
     align-content: space-around;
     height: 300px;
   }
-
-  footer .footer-inner > div {
+  footer .footer-inner>div {
     margin: 0;
   }
-
   footer .quote {
     order: 1;
     height: 50%;
     width: 50% !important;
     padding: 45px 50px 0;
   }
-
   footer .contact {
     order: 2;
     height: 50%;
-    width: 50% !important;    
+    width: 50% !important;
     padding: 50px 50px 0;
   }
-
   footer .host {
     order: 3;
     height: 50%;
-    width: 50% !important;    
+    width: 50% !important;
     padding: 50px 50px 0;
   }
-
   footer .credit {
     order: 4;
     height: 50%;
     width: 50% !important;
     padding: 30px 50px 0;
   }
-
-
-/*
+  /*
 *
 *
 *containers fixation
 *
 *
 */
-
-/*   .upper-activities-fixed {
+  /*   .upper-activities-fixed {
     position: fixed;
     left: 66%;
     bottom: 385px;
@@ -138,32 +153,31 @@
     width: 32% !important;
     margin-bottom: 0;
   } */
-
-
-  
-
-
 }
 
+/***** DESKTOP *****/
+@media screen and (min-width: 900px) {
 
-
-
-
-
-@media screen and (min-width: 900px){
-
+  /*
+  *
+  *header
+  *
+  */
   header {
     padding-bottom: 200px;
   }
 
+  /*
+  *
+  *main container
+  *
+  */
   main {
     margin-top: -200px;
   }
-
   .main-inner {
-/*     border: 2px dashed black; */
+    /*     border: 2px dashed black; */
   }
-
   .main-inner::after {
     content: "holawahba";
     display: block;
@@ -171,109 +185,99 @@
     visibility: hidden;
     height: 0;
   }
-
   .left {
     width: 75%;
     float: left;
-/*     height: 1900px; */
-/*     border: 2px dashed red; */
+    /*     height: 1900px; */
+    /*     border: 2px dashed red; */
   }
-
   .right {
     width: 25%;
     float: left;
   }
 
+  /*
+  *left pane
+  */
   .left .projects {
     width: 66.6%;
   }
-
   .left .upper-activities, .left .lower-activities {
     width: 33.3%;
   }
 
+  /*
+  *right pane
+  */
   .right .upper-social, .right .lower-social {
     width: 100%;
   }
-
   .activities .personal-photo, .activities .feature {
     display: none;
-/*     border: 2px dashed red; */
-  }  
-
+    /*     border: 2px dashed red; */
+  }
   .social .personal-photo, .social .feature {
     display: block;
-/*     border: 2px dashed red; */
+    /*     border: 2px dashed red; */
   }
-  
-   .projects .project {
+  .projects .project {
     width: 30%;
   }
+    /*
+  *
+  *
+  *footer
+  *
+  *
+  */
 
-
-
-/*
-*
-*
-*footer
-*
-*
-*/
-
+  /*
+  *
+  *footer
+  *
+  */
   footer .footer-inner {
     height: 200px;
   }
-
-  footer .footer-inner > div {
-/*     border: 1px dashed red; */
+  footer .footer-inner>div {
+    /*     border: 1px dashed red; */
   }
-
   footer .quote {
     order: 2;
     height: 50%;
     width: 50% !important;
     padding: 10px 20px 0;
   }
-
   footer .contact {
     order: 1;
     height: 100%;
-    width: 25% !important;    
+    width: 25% !important;
     padding: 140px 6px 0;
   }
-
   footer .host {
     order: 4;
     height: 100%;
-    width: 25% !important;    
+    width: 25% !important;
     padding: 130px 10px 0;
   }
-
   footer .credit {
     order: 3;
     height: 50%;
     width: 50% !important;
     padding-right: 10px;
     padding-left: 10px;
-    
   }
-
-
-/*
+  /*
 *
 *
 *containers fixation
 *
 *
 */
-
-
-
-/*
+  /*
 * second state: fixed to the screen
 */
-
-/*   .upper-activities-fixed {
+  /*   .upper-activities-fixed {
     position: fixed;
     left: 50%;
     bottom: 385px;
@@ -288,20 +292,16 @@
     width: 24% !important;
     margin-bottom: 0;
   }
-  
+
   .projects-fixed {
     position: fixed;
     bottom: 0;
     width: 48% !important ;
   } */
-
-
-
-/*
+  /*
 * third state: scroll near the footer
 */
-
-/*   .main-inner-scroll-down {
+  /*   .main-inner-scroll-down {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -311,8 +311,4 @@
     justify-content: flex-end;
   }
  */
-
-
-
-
 }
