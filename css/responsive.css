@@ -64,6 +64,7 @@
   .left {
     flex-direction: column;
     height: 1660px;
+    position: relative;
 /*     border: 2px dashed black; */
     /*     align-items: flex-start; */
   }
@@ -159,25 +160,47 @@
   /*
 *
 *
-*containers fixation
+* activities containers fixation
 *
 *
 */
-  /*   .upper-activities-fixed {
+
+/* 2nd state */
+
+   .upper-activities-fixed {
     position: fixed;
-    left: 66%;
-    bottom: 385px;
-    width: 32% !important;
-    margin-top: 0 !important;
+    right: 4%;
+    width: 27.968%;
+    max-width: 279.672px;
   }
 
   .lower-activities-fixed {
     position: fixed;
-    left: 66%;
+    right: 4%;
+    width: 27.968%;
+    max-width: 279.672px;
+    margin-bottom:0;
     bottom: 0;
-    width: 32% !important;
-    margin-bottom: 0;
-  } */
+  }
+
+/* 3rd state */
+
+
+  .upper-activities-scroll {
+    position: absolute;
+    right: 0;
+    padding-bottom: 15px;
+  }
+
+  .lower-activities-scroll {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+
+
 }
 
 
