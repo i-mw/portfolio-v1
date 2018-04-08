@@ -37,3 +37,43 @@
 
 
 
+/*set left pane height to the height of projects pane*/
+
+if ($(window).width() + 15 >= 700 ) {
+  var projectsHeight = $(".projects").css("height");
+  var heightNum = projectsHeight[0] + projectsHeight[1] + projectsHeight[2] + projectsHeight[3];
+  heightNum = Number(heightNum);
+
+  var projectsMarginBottom = $(".projects").css("margin-bottom");
+  var marginNum = projectsMarginBottom[0] + projectsMarginBottom[1];
+  marginNum = Number(marginNum);
+
+  var leftHeight = heightNum + marginNum + "px";
+
+  $(".left").css("height", leftHeight);
+}
+else {
+  $(".left").css("height", "auto");
+}
+
+
+$(window).resize(function(){
+  if ($(window).width() + 15 >= 700 ) {
+    var projectsHeight = $(".projects").css("height");
+    var heightNum = projectsHeight[0] + projectsHeight[1] + projectsHeight[2] + projectsHeight[3];
+    heightNum = Number(heightNum);
+
+    var projectsMarginBottom = $(".projects").css("margin-bottom");
+    var marginNum = projectsMarginBottom[0] + projectsMarginBottom[1];
+    marginNum = Number(marginNum);
+
+    var leftHeight = heightNum + marginNum + "px";
+
+    $(".left").css("height", leftHeight);
+  }
+  else {
+    $(".left").css("height", "auto");
+  }
+});
+
+
