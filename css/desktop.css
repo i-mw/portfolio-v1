@@ -1,0 +1,165 @@
+
+
+/***** DESKTOP *****/
+@media screen and (min-width: 900px) {
+
+  /*
+  *
+  *header
+  *
+  */
+  header {
+    padding-bottom: 200px;
+  }
+
+  /*
+  *
+  *main container
+  *
+  */
+  main {
+    margin-top: -200px;
+  }
+  .main-inner {
+    /*     border: 2px dashed black; */
+  }
+  .main-inner::after {
+    content: "holawahba";
+    display: block;
+    clear: left;
+    visibility: hidden;
+    height: 0;
+  }
+  .left {
+    width: 72%;
+    float: left;
+    margin-right: 4%;
+    /*     height: 1900px; */
+    /*     border: 2px dashed red; */
+  }
+  .right {
+    width: 24%;
+    float: left;
+  }
+
+  /*
+  *left pane
+  */
+  .left .projects {
+    width: 66.6%;
+  }
+  .left .upper-activities, .left .lower-activities {
+    width: 33.3%;
+  }
+  .sign {
+    margin-bottom: 0 !important;
+  }
+
+  /*
+  *right pane
+  */
+  .right .upper-social, .right .lower-social {
+    width: 100%;
+  }
+  .activities .personal-photo, .activities .feature {
+    display: none;
+    /*     border: 2px dashed red; */
+  }
+  .social .personal-photo, .social .feature {
+    display: block;
+    /*     border: 2px dashed red; */
+  }
+  .projects .project {
+    width: 30%;
+  }
+    /*
+  *
+  *
+  *footer
+  *
+  *
+  */
+
+  /*
+  *
+  *footer
+  *
+  */
+  footer .footer-inner {
+    height: 200px;
+  }
+  footer .footer-inner>div {
+    /*     border: 1px dashed red; */
+  }
+  footer .quote {
+    order: 2;
+    height: 50%;
+    width: 50% !important;
+    padding: 10px 20px 0;
+  }
+  footer .contact {
+    order: 1;
+    height: 100%;
+    width: 25% !important;
+    padding: 140px 6px 0;
+  }
+  footer .host {
+    order: 4;
+    height: 100%;
+    width: 25% !important;
+    padding: 130px 10px 0;
+  }
+  footer .credit {
+    order: 3;
+    height: 50%;
+    width: 50% !important;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  /*
+*
+*
+*containers fixation
+*
+*
+*/
+  /*
+* second state: fixed to the screen
+*/
+  /*   .upper-activities-fixed {
+    position: fixed;
+    left: 50%;
+    bottom: 385px;
+    width: 24% !important;
+    margin-top: 0 !important;
+  }
+
+  .lower-activities-fixed {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 24% !important;
+    margin-bottom: 0;
+  }
+
+  .projects-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 48% !important ;
+  } */
+  /*
+* third state: scroll near the footer
+*/
+  /*   .main-inner-scroll-down {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .left-scroll-down {
+    justify-content: flex-end;
+  }
+ */
+}
+
+

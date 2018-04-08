@@ -29,8 +29,12 @@ body {
 }
 
 .inner {
-  width: 100%;
-  padding: 0 2% 0 2%;
+  width: 96%;
+  max-width: 400px;
+/*   max-width: 920px; */
+  margin-right: auto;
+  margin-left: auto;
+/*   padding: 0 2% 0 2%; */
 }
 
 
@@ -74,6 +78,9 @@ header h3 a:active {
 
 .header-inner>div {
   width: 100%;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 15px 0;
 }
 
@@ -155,6 +162,7 @@ main {
 
 .main-inner {
   /* 	visibility: hidden; */
+/*   border: 1px dashed white; */
 }
 
 .left {
@@ -181,6 +189,24 @@ main {
 
 .social {
   background-color: green;
+}
+
+.pane {
+  margin-bottom: 15px;
+/*   border: 3px solid black; */
+}
+
+.card {
+/*   border: 1px dashed white !important; */
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 15px !important;
+  padding: 12px !important;
+}
+
+.card:last-of-type {
+  margin-bottom: 0 !important;
+/*   border: 1px solid black !important; */
 }
 
 

@@ -39,7 +39,7 @@
 
 /*set left pane height to the height of projects pane*/
 
-if ($(window).width() + 15 >= 700 ) {
+if ($(window).width() + 15 >= 600 ) {
   var projectsHeight = $(".projects").css("height");
   var heightNum = projectsHeight[0] + projectsHeight[1] + projectsHeight[2] + projectsHeight[3];
   heightNum = Number(heightNum);
@@ -58,7 +58,7 @@ else {
 
 
 $(window).resize(function(){
-  if ($(window).width() + 15 >= 700 ) {
+  if ($(window).width() + 15 >= 600 ) {
     var projectsHeight = $(".projects").css("height");
     var heightNum = projectsHeight[0] + projectsHeight[1] + projectsHeight[2] + projectsHeight[3];
     heightNum = Number(heightNum);
