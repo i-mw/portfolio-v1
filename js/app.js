@@ -73,6 +73,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-fixed");
       $(".upper-activities").addClass("upper-activities-scroll");
       $(".lower-activities").addClass("lower-activities-scroll");
+      $(".projects").addClass("projects-fixed-scroll");
       $(".upper-activities").css("right", "0");
       $(".lower-activities").css("right", "0");
     }
@@ -83,6 +84,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-scroll");       
       $(".upper-activities").addClass("upper-activities-fixed");
       $(".lower-activities").addClass("lower-activities-fixed");
+      $(".projects").addClass("projects-fixed-scroll");
       if ($(window).width() + 15 >= 920 ){
         $(".upper-activities").css("right", $(".inner").css("margin-left"));
         $(".lower-activities").css("right", $(".inner").css("margin-left"));
@@ -106,7 +108,8 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");      
       $(".upper-activities").removeClass("upper-activities-scroll");
-      $(".lower-activities").removeClass("lower-activities-scroll");       
+      $(".lower-activities").removeClass("lower-activities-scroll");     
+      $(".projects").removeClass("projects-fixed-scroll");
     }
 
 
@@ -159,6 +162,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-fixed");
       $(".upper-activities").addClass("upper-activities-scroll");
       $(".lower-activities").addClass("lower-activities-scroll");
+      $(".projects").addClass("projects-fixed-scroll");
       $(".upper-activities").css("right", "0");
       $(".lower-activities").css("right", "0");
     }
@@ -169,6 +173,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-scroll");       
       $(".upper-activities").addClass("upper-activities-fixed");
       $(".lower-activities").addClass("lower-activities-fixed");
+      $(".projects").addClass("projects-fixed-scroll");
       if ($(window).width() + 15 >= 920 ){
         $(".upper-activities").css("right", $(".inner").css("margin-left"));
         $(".lower-activities").css("right", $(".inner").css("margin-left"));
@@ -192,7 +197,8 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");      
       $(".upper-activities").removeClass("upper-activities-scroll");
-      $(".lower-activities").removeClass("lower-activities-scroll");       
+      $(".lower-activities").removeClass("lower-activities-scroll");     
+      $(".projects").removeClass("projects-fixed-scroll");
     }
 
 
@@ -291,6 +297,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-fixed");
       $(".upper-activities").addClass("upper-activities-scroll");
       $(".lower-activities").addClass("lower-activities-scroll");
+      $(".projects").addClass("projects-fixed-scroll");
       $(".upper-activities").css("right", "0");
       $(".lower-activities").css("right", "0");
     }
@@ -301,6 +308,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-scroll");       
       $(".upper-activities").addClass("upper-activities-fixed");
       $(".lower-activities").addClass("lower-activities-fixed");
+      $(".projects").addClass("projects-fixed-scroll");
       if ($(window).width() + 15 >= 920 ){
         $(".upper-activities").css("right", $(".inner").css("margin-left"));
         $(".lower-activities").css("right", $(".inner").css("margin-left"));
@@ -324,7 +332,8 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");      
       $(".upper-activities").removeClass("upper-activities-scroll");
-      $(".lower-activities").removeClass("lower-activities-scroll");       
+      $(".lower-activities").removeClass("lower-activities-scroll");     
+      $(".projects").removeClass("projects-fixed-scroll");
     }
 
 
@@ -333,16 +342,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
 
 
 
-
   $(window).scroll(function(){
-
-// console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
-// console.log($(".upper-activities").offset().top >= $(".projects").offset().top );
-// console.log($('.projects').offset().top + $(".projects").height() > $(".lower-activities").offset().top + $(".lower-activities").height());
-
-// console.log($('.projects').offset().top + $(".projects").height());
-// console.log($(".lower-activities").offset().top + $(".lower-activities").height());
-
 
 var aboveViewport = $(window).scrollTop();
 var heightOfViewport = $(window).height();
@@ -382,6 +382,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-fixed");
       $(".upper-activities").addClass("upper-activities-scroll");
       $(".lower-activities").addClass("lower-activities-scroll");
+      $(".projects").addClass("projects-fixed-scroll");
       $(".upper-activities").css("right", "0");
       $(".lower-activities").css("right", "0");
     }
@@ -392,6 +393,7 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".lower-activities").removeClass("lower-activities-scroll");       
       $(".upper-activities").addClass("upper-activities-fixed");
       $(".lower-activities").addClass("lower-activities-fixed");
+      $(".projects").addClass("projects-fixed-scroll");
       if ($(window).width() + 15 >= 920 ){
         $(".upper-activities").css("right", $(".inner").css("margin-left"));
         $(".lower-activities").css("right", $(".inner").css("margin-left"));
@@ -415,9 +417,9 @@ console.log(staticBottomOfLowerAct + "static bottom of lower activities");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");      
       $(".upper-activities").removeClass("upper-activities-scroll");
-      $(".lower-activities").removeClass("lower-activities-scroll");       
+      $(".lower-activities").removeClass("lower-activities-scroll");     
+      $(".projects").removeClass("projects-fixed-scroll");
     }
-
 
 
 

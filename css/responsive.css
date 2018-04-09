@@ -68,7 +68,7 @@
   */
   .left {
     flex-direction: column;
-    height: 1660px;
+    height: 1904px;
     position: relative;
     align-content: space-between;
 /*     border: 2px dashed black; */
@@ -76,6 +76,7 @@
   }
 
   /* projects pane */
+
   .projects .projects-container {
     text-align: center;
   }
@@ -179,6 +180,14 @@
 *
 *
 */
+
+/* for 2nd and 3rd states .. only to satisfy old firefox */
+
+   .projects-fixed-scroll {
+    position: absolute; 
+    left: 0;
+    top: 0;
+  }
 
 /* 2nd state */
 
