@@ -24,24 +24,29 @@
   */
   .inner {
     width: 92%;
-    max-width: 920px;
+    max-width: 850px;
   }
 
   .projects {
     order: 1;
     width: 65.6%;
-    margin-right: 4%;
+/*     margin-bottom: 0; */
+/*     margin-right: 4%; */
   }
 
   .upper-activities {
     order: 2;
     width: 30.4%;
+    max-width: 220px;
+    margin-bottom: 20px;
     /*     flex-shrink: -1; */
   }
 
   .lower-activities {
     order: 3;
     width: 30.4%;
+    max-width: 220px; 
+/*     margin-bottom: 0;    */
   }
 
   .upper-social {
@@ -65,6 +70,7 @@
     flex-direction: column;
     height: 1660px;
     position: relative;
+    align-content: space-between;
 /*     border: 2px dashed black; */
     /*     align-items: flex-start; */
   }
@@ -171,14 +177,14 @@
     position: fixed;
     right: 4%;
     width: 27.968%;
-    max-width: 279.672px;
+    max-width: 220px;
   }
 
   .lower-activities-fixed {
     position: fixed;
     right: 4%;
     width: 27.968%;
-    max-width: 279.672px;
+    max-width: 220px;
     margin-bottom:0;
     bottom: 0;
   }

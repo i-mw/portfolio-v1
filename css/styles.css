@@ -54,7 +54,7 @@ header {
   /* 	padding-bottom: 150px; */
   /* 	opacity: 1; */
   color: #D8D8D0;
-  padding-bottom: 150px;
+  padding-bottom: 300px;
 }
 
 header span {
@@ -157,7 +157,7 @@ header h3 a:active {
 
 main {
   /* 	bacground-position: 200px 200px, 200px 200px; */
-  margin-top: -150px;
+  margin-top: -250px;
   /* 	z-index: 0; */
 }
 
@@ -170,31 +170,44 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+/*   margin-bottom: 90px !important; */
+}
+
+.right {
+/*   margin-bottom: 90px; */
 }
 
 .upper-activities {
   order: 1;
   width: 100%;
+/*   margin-bottom: 90px; */
 /*   background-color: pink; */
 }
 
 .projects {
   order: 2;
+/*   margin-bottom: 90px; */
 /*   background-color: red; */
 }
 
 .lower-activities {
   order: 3;
+/*   margin-bottom: 90px; */
 /*   background-color: yellow; */
 }
 
-.social {
-/*   background-color: green; */
+
+.lower-social {
+/*   margin-bottom: 90px; */
 }
 
 .pane {
-  margin-bottom: 15px;
+  margin-bottom: 90px;
 /*   border: 3px solid black; */
+}
+
+.upper-social {
+  margin-bottom: 40px;
 }
 
 .card {
@@ -205,24 +218,35 @@ main {
   margin: 0 !important;
   margin-bottom: 15px !important;
   padding: 12px !important;
+/*   background-color: #699298; */
+}
+
+.projects .card {
+  background-color: #8AB3B7;
+  margin-bottom: 40px !important;
+}
+
+.activities .card {
   background-color: #699298;
+  margin-bottom: 20px !important;
+}
+
+.social .card {
+  background-color: #699298;
+  margin-bottom: 40px !important;
+}
+
+.projects .card:hover {
+  background-color: #95babd;
+}
+
+.activities .card:hover, .social .card:hover {
+  background-color: #73999f;
 }
 
 .card:last-of-type {
   margin-bottom: 0 !important;
 /*   border: 1px solid black !important; */
-}
-
-.projects .card {
-/*   background-color: #699298; */
-}
-
-.activities .card {
-/*   background-color: #8AB3B7; */
-}
-
-.social .card {
-/*   background-color: #C9DCDE; */
 }
 
 
@@ -239,8 +263,8 @@ main {
   width: 150px;
   border: 2px solid black;
   border-radius: 100%;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .activities .card {
