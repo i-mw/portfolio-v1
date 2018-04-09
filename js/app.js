@@ -34,7 +34,40 @@ if ($(window).width() + 15 >= 600 ) {
 
 
 
-    if ( $(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() ){
+
+var aboveViewport = $(window).scrollTop();
+var heightOfViewport = $(window).height();
+var bottomOfViewport = $(window).scrollTop() + $(window).height();
+
+var aboveProjects = $(".projects").offset().top;
+var heightOfProjects = $(".projects").height();
+var bottomOfProjects = $(".projects").offset().top + $(".projects").height();
+
+var aboveLowerAct = $(".lower-activities").offset().top;
+var heightOfLowerAct = $(".lower-activities").height();
+var bottomOfLowerAct = $(".lower-activities").offset().top + $(".lower-activities").height();
+var staticBottomOfLowerAct = $(".projects").offset().top + $(".upper-activities").outerHeight(true) + $(".lower-activities").height();
+
+
+var aboveUpperAct = $(".upper-activities").offset().top;
+
+
+
+console.log(bottomOfViewport + " bottom of viewport");
+console.log(bottomOfProjects + " bottom of projects");
+console.log(bottomOfLowerAct + " bottom of lower activities");
+console.log(staticBottomOfLowerAct + "static bottom of lower activities");
+
+// console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
+// console.log($(".upper-activities").offset().top >= $(".projects").offset().top );
+// console.log($('.projects').offset().top + $(".projects").height() > $(".lower-activities").offset().top + $(".lower-activities").height());
+
+// console.log($('.projects').offset().top + $(".projects").height());
+// console.log($(".lower-activities").offset().top + $(".lower-activities").height());
+
+//     console.log(upperActTop);
+
+    if ( bottomOfViewport >= bottomOfProjects ){
       console.log("scroll");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");
@@ -44,7 +77,7 @@ if ($(window).width() + 15 >= 600 ) {
       $(".lower-activities").css("right", "0");
     }
 
-    else if( $(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height()  &&  $(".upper-activities").offset().top >= $(".projects").offset().top  /* &&   $('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height()*/ ){
+    else if ( bottomOfViewport >= staticBottomOfLowerAct ){
       console.log("fixed");
       $(".upper-activities").removeClass("upper-activities-scroll");
       $(".lower-activities").removeClass("lower-activities-scroll");       
@@ -63,6 +96,9 @@ if ($(window).width() + 15 >= 600 ) {
     else {
       console.log("above");
 
+//       console.log($(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() );
+
+    
       console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
       console.log($(".upper-activities").offset().top >= $(".projects").offset().top);
 //       console.log($('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
@@ -75,7 +111,38 @@ if ($(window).width() + 15 >= 600 ) {
 
 
 
+
+
+
+
+
+
+//   var upperActTop = $(".upper-activities").offset().top;
+
   $(window).scroll(function(){
+
+var aboveViewport = $(window).scrollTop();
+var heightOfViewport = $(window).height();
+var bottomOfViewport = $(window).scrollTop() + $(window).height();
+
+var aboveProjects = $(".projects").offset().top;
+var heightOfProjects = $(".projects").height();
+var bottomOfProjects = $(".projects").offset().top + $(".projects").height();
+
+var aboveLowerAct = $(".lower-activities").offset().top;
+var heightOfLowerAct = $(".lower-activities").height();
+var bottomOfLowerAct = $(".lower-activities").offset().top + $(".lower-activities").height();
+var staticBottomOfLowerAct = $(".projects").offset().top + $(".upper-activities").outerHeight(true) + $(".lower-activities").height();
+
+
+var aboveUpperAct = $(".upper-activities").offset().top;
+
+
+
+console.log(bottomOfViewport + " bottom of viewport");
+console.log(bottomOfProjects + " bottom of projects");
+console.log(bottomOfLowerAct + " bottom of lower activities");
+console.log(staticBottomOfLowerAct + "static bottom of lower activities");
 
 // console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
 // console.log($(".upper-activities").offset().top >= $(".projects").offset().top );
@@ -84,8 +151,9 @@ if ($(window).width() + 15 >= 600 ) {
 // console.log($('.projects').offset().top + $(".projects").height());
 // console.log($(".lower-activities").offset().top + $(".lower-activities").height());
 
+//     console.log(upperActTop);
 
-    if ( $(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() ){
+    if ( bottomOfViewport >= bottomOfProjects ){
       console.log("scroll");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");
@@ -95,7 +163,7 @@ if ($(window).width() + 15 >= 600 ) {
       $(".lower-activities").css("right", "0");
     }
 
-    else if( $(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height()  &&  $(".upper-activities").offset().top >= $(".projects").offset().top  /* &&   $('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height()*/ ){
+    else if ( bottomOfViewport >= staticBottomOfLowerAct ){
       console.log("fixed");
       $(".upper-activities").removeClass("upper-activities-scroll");
       $(".lower-activities").removeClass("lower-activities-scroll");       
@@ -114,6 +182,9 @@ if ($(window).width() + 15 >= 600 ) {
     else {
       console.log("above");
 
+//       console.log($(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() );
+
+    
       console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
       console.log($(".upper-activities").offset().top >= $(".projects").offset().top);
 //       console.log($('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
@@ -182,7 +253,39 @@ if ($(window).width() + 15 >= 600 ) {
 
 
 
-    if ( $(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() ){
+var aboveViewport = $(window).scrollTop();
+var heightOfViewport = $(window).height();
+var bottomOfViewport = $(window).scrollTop() + $(window).height();
+
+var aboveProjects = $(".projects").offset().top;
+var heightOfProjects = $(".projects").height();
+var bottomOfProjects = $(".projects").offset().top + $(".projects").height();
+
+var aboveLowerAct = $(".lower-activities").offset().top;
+var heightOfLowerAct = $(".lower-activities").height();
+var bottomOfLowerAct = $(".lower-activities").offset().top + $(".lower-activities").height();
+var staticBottomOfLowerAct = $(".projects").offset().top + $(".upper-activities").outerHeight(true) + $(".lower-activities").height();
+
+
+var aboveUpperAct = $(".upper-activities").offset().top;
+
+
+
+console.log(bottomOfViewport + " bottom of viewport");
+console.log(bottomOfProjects + " bottom of projects");
+console.log(bottomOfLowerAct + " bottom of lower activities");
+console.log(staticBottomOfLowerAct + "static bottom of lower activities");
+
+// console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
+// console.log($(".upper-activities").offset().top >= $(".projects").offset().top );
+// console.log($('.projects').offset().top + $(".projects").height() > $(".lower-activities").offset().top + $(".lower-activities").height());
+
+// console.log($('.projects').offset().top + $(".projects").height());
+// console.log($(".lower-activities").offset().top + $(".lower-activities").height());
+
+//     console.log(upperActTop);
+
+    if ( bottomOfViewport >= bottomOfProjects ){
       console.log("scroll");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");
@@ -192,7 +295,7 @@ if ($(window).width() + 15 >= 600 ) {
       $(".lower-activities").css("right", "0");
     }
 
-    else if( $(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height()  &&  $(".upper-activities").offset().top >= $(".projects").offset().top  /* &&   $('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height()*/ ){
+    else if ( bottomOfViewport >= staticBottomOfLowerAct ){
       console.log("fixed");
       $(".upper-activities").removeClass("upper-activities-scroll");
       $(".lower-activities").removeClass("lower-activities-scroll");       
@@ -211,6 +314,9 @@ if ($(window).width() + 15 >= 600 ) {
     else {
       console.log("above");
 
+//       console.log($(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() );
+
+    
       console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
       console.log($(".upper-activities").offset().top >= $(".projects").offset().top);
 //       console.log($('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
@@ -220,6 +326,11 @@ if ($(window).width() + 15 >= 600 ) {
       $(".upper-activities").removeClass("upper-activities-scroll");
       $(".lower-activities").removeClass("lower-activities-scroll");       
     }
+
+
+
+
+
 
 
 
@@ -233,7 +344,39 @@ if ($(window).width() + 15 >= 600 ) {
 // console.log($(".lower-activities").offset().top + $(".lower-activities").height());
 
 
-    if ( $(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() ){
+var aboveViewport = $(window).scrollTop();
+var heightOfViewport = $(window).height();
+var bottomOfViewport = $(window).scrollTop() + $(window).height();
+
+var aboveProjects = $(".projects").offset().top;
+var heightOfProjects = $(".projects").height();
+var bottomOfProjects = $(".projects").offset().top + $(".projects").height();
+
+var aboveLowerAct = $(".lower-activities").offset().top;
+var heightOfLowerAct = $(".lower-activities").height();
+var bottomOfLowerAct = $(".lower-activities").offset().top + $(".lower-activities").height();
+var staticBottomOfLowerAct = $(".projects").offset().top + $(".upper-activities").outerHeight(true) + $(".lower-activities").height();
+
+
+var aboveUpperAct = $(".upper-activities").offset().top;
+
+
+
+console.log(bottomOfViewport + " bottom of viewport");
+console.log(bottomOfProjects + " bottom of projects");
+console.log(bottomOfLowerAct + " bottom of lower activities");
+console.log(staticBottomOfLowerAct + "static bottom of lower activities");
+
+// console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
+// console.log($(".upper-activities").offset().top >= $(".projects").offset().top );
+// console.log($('.projects').offset().top + $(".projects").height() > $(".lower-activities").offset().top + $(".lower-activities").height());
+
+// console.log($('.projects').offset().top + $(".projects").height());
+// console.log($(".lower-activities").offset().top + $(".lower-activities").height());
+
+//     console.log(upperActTop);
+
+    if ( bottomOfViewport >= bottomOfProjects ){
       console.log("scroll");
       $(".upper-activities").removeClass("upper-activities-fixed");
       $(".lower-activities").removeClass("lower-activities-fixed");
@@ -243,7 +386,7 @@ if ($(window).width() + 15 >= 600 ) {
       $(".lower-activities").css("right", "0");
     }
 
-    else if( $(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height()  &&  $(".upper-activities").offset().top >= $(".projects").offset().top  /* &&   $('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height()*/ ){
+    else if ( bottomOfViewport >= staticBottomOfLowerAct ){
       console.log("fixed");
       $(".upper-activities").removeClass("upper-activities-scroll");
       $(".lower-activities").removeClass("lower-activities-scroll");       
@@ -262,6 +405,9 @@ if ($(window).width() + 15 >= 600 ) {
     else {
       console.log("above");
 
+//       console.log($(window).scrollTop() + $(window).height() >= $(".projects").offset().top + $(".projects").height() );
+
+    
       console.log($(window).scrollTop() + $(window).height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
       console.log($(".upper-activities").offset().top >= $(".projects").offset().top);
 //       console.log($('.projects').offset().top + $(".projects").height() >= $(".lower-activities").offset().top + $(".lower-activities").height());
@@ -271,6 +417,8 @@ if ($(window).width() + 15 >= 600 ) {
       $(".upper-activities").removeClass("upper-activities-scroll");
       $(".lower-activities").removeClass("lower-activities-scroll");       
     }
+
+
 
 
 
