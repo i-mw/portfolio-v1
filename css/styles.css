@@ -426,7 +426,7 @@ main {
   position: relative;
   overflow: hidden;
 /*   box-shadow: 1px 1px 1px red; */
-  transition: box-shadow 500ms;
+  transition: box-shadow 400ms;
 }
 
 .projects .project a:first-child {
@@ -506,6 +506,7 @@ main {
   left: 0;
   right: 0;
   background-color: rgba(2, 2, 2, 0.3);
+  transition: background-color 400ms;
 }
 
 .projects .project:hover {
@@ -524,8 +525,16 @@ main {
   right: 5px;
   color: #F7F7F7;
   text-decoration: none;
-  transition-property: color;
-  transition-duration: 500ms;
+/*   transition-property: color;
+  transition-duration: 500ms; */
+}
+
+.projects .project:active a:nth-child(2) {
+  color: #D8D8D0;
+}
+
+.projects .project a:nth-child(2):active {
+  color: #D8D8D0;
 }
 
 /* .projects .project a:nth-child(2):hover {
@@ -558,7 +567,7 @@ main {
   vertical-align: middle;
   line-height: 33.5px;
   transition-property: color background-color;
-  transition-duration: 700ms;
+  transition-duration: 500ms;
   /* 	border: 1px dashed black; */
 }
 
@@ -572,6 +581,10 @@ main {
   background-color: #F7F7F7;
   /* 	border: 1px solid grey; */
 }
+
+.activities a:active {
+  color: #112027 !important;
+} 
 
 
 /*
@@ -664,6 +677,7 @@ main {
 *social panes
 *
 */
+
 
 .upper-social {
   /* 	border: 1px dashed red; */
