@@ -195,7 +195,8 @@
   .upper-activities-scroll {
     position: absolute;
     right: 0;
-    padding-bottom: 15px;
+    margin-bottom:110px;
+/*     padding-bottom: 15px; */
   }
 
   .lower-activities-scroll {

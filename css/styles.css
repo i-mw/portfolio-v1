@@ -53,28 +53,28 @@ header {
   /* 	border: 1px dashed rgba(23, 42, 48, 0.8); */
   /* 	padding-bottom: 150px; */
   /* 	opacity: 1; */
-  color: #D8D8D0;
+  color: #F7F7F7;
   padding-bottom: 300px;
 }
 
 header span {
-  background-color: rgba(54, 90, 102, 0.2);
+  background-color: rgba(54, 90, 102, 0.5);
 }
 
 header h3 a {
-  background-color: rgba(54, 90, 102, 0.2);
+  background-color: rgba(54, 90, 102, 0.5);
   text-decoration: none;
-  color: #D8D8D0;
-  border-bottom: 1px dotted #D8D8D0;
+  color: #F7F7F7;
+  border-bottom: 1px dotted #F7F7F7;
 }
 
 header h3 a:hover {
-  border-bottom: 1px solid #D8D8D0;
+  border-bottom: 1px solid #F7F7F7;
 }
 
 header h3 a:active {
-  color: blue;
-  border-bottom: 1px solid blue;
+  color: #112027;
+  border-bottom: 1px solid #112027;
 }
 
 .header-inner>div {
@@ -95,7 +95,7 @@ header h3 a:active {
 }
 
 .header-inner div .icon-mw::before {
-  color: #D8D8D0;
+  color: #F7F7F7;
   font-size: 6.8em;
   background-color: rgba(54, 90, 102, 0.2);
 }
@@ -126,7 +126,7 @@ header h3 a:active {
 }
 
 .nav i {
-  color: #D8D8D0;
+  color: #F7F7F7;
   font-size: 2em;
   width: 30px;
   height: 30px;
@@ -212,7 +212,6 @@ main {
 
 .card {
 /*   border: 1px dashed white !important; */
-  border: 1px solid #8AB3B7 !important;
   border-radius: 1.5% !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -222,16 +221,19 @@ main {
 }
 
 .projects .card {
+  border: 1px solid #699298 !important;  
   background-color: #8AB3B7;
   margin-bottom: 40px !important;
 }
 
 .activities .card {
+  border: 1px solid #8AB3B7 !important;    
   background-color: #699298;
   margin-bottom: 20px !important;
 }
 
 .social .card {
+  border: 1px solid #8AB3B7 !important;      
   background-color: #699298;
   margin-bottom: 40px !important;
 }
@@ -261,17 +263,21 @@ main {
   margin-right: auto;
   margin-left: auto;
   width: 150px;
-  border: 2px solid black;
+  border: 2px solid #699298;
   border-radius: 100%;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
+.upper-activities .personal-photo:hover, .social .personal-photo:hover {
+  border: 2px solid #73999f;  
+}
+
 .activities .card {
-  border: 1px solid black;
+/*   border: 1px solid black;
   border-radius: 13px;
   margin-top: 12px;
-  padding: 12px;
+  padding: 12px; */
 }
 
 .upper-activities .card:first-of-type {
@@ -279,17 +285,18 @@ main {
 }
 
 .activities .card h4 {
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px dashed #365A66;
+  padding-bottom: 2px;
   margin-bottom: 10px;
 }
 
 #job-availablity p {
-  border: 1px solid red;
+  border: 1px solid #8AB3B7;
   border-radius: 5px;
   padding: 2px;
   display: inline-block;
-  background-color: pink;
-  color: white;
+  background-color: #365A66;
+  color: #F7F7F7;
 }
 
 #job-availablity p:last-child {
@@ -303,48 +310,49 @@ main {
 }
 
 .upper-activities .feature, .social .feature {
-  margin-bottom: 20px;
+/*   margin-bottom: 20px; */
   position: relative;
 }
 
 .upper-activities .feature p:first-of-type, .social .feature p:first-of-type {
   /* 	border: 1px dashed red; */
   position: absolute;
-  top: 15px;
-  left: 84px;
+  top: 11px;
+  left: 72px;
   font-size: 0.6em;
-  color: grey;
+  color: #F7F7F7;
 }
 
 .upper-activities .feature .img-container, .social .feature .img-container {
   width: 100%;
   height: 200px;
   overflow: hidden;
+  border-radius: 3px;
   /* 	border: 1px solid red; */
 }
 
 .upper-activities .feature img, .social .feature img {
-  width: 100%;
-  margin-top: -45%;
+/*   width: 100%; */
+/*   margin-top: -45%; */
   /* 	margin-left: -50%; */
   /* 	border: 1px dashed red; */
 }
 
-.upper-activities .feature p:last-of-type, .social .feature p:last-of-type {
-  margin-top: 12px;
+.upper-activities .feature a:last-of-type{
+  color: #F7F7F7;
 }
 
 .upper-activities .feature a:first-of-type {
   display: block;
-  margin-right: 5px;
-  margin-left: 5px;
+/*   margin-right: 5px;
+  margin-left: 5px; */
 }
 
-.social .feature a:first-of-type {
+/* .social .feature a:first-of-type {
   display: block;
   margin-right: 10px;
   margin-left: 10px;
-}
+} */
 
 .feature .img-container {
   /* 	border: 1px dashed black; */
@@ -352,7 +360,7 @@ main {
 }
 
 .feature .img-container:hover {
-  box-shadow: 1px 1px 1px green;
+/*   box-shadow: 1px 1px 1px green; */
 }
 
 
@@ -367,18 +375,19 @@ main {
 }
 
 .projects .card {
-  border: 1px solid black;
-  border-radius: 13px;
-  padding: 12px;
-  margin-bottom: 15px;
+/*   border: 1px solid black; */
+/*   border-radius: 13px; */
+/*   padding: 12px; */
+/*   margin-bottom: 15px; */
 }
 
 .projects .card:last-of-type {
-  margin-bottom: 0;
+/*   margin-bottom: 0; */
 }
 
 .projects .card h3 {
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px dashed #365A66;
+  padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
@@ -400,7 +409,7 @@ main {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  box-shadow: 1px 1px 1px red;
+/*   box-shadow: 1px 1px 1px red; */
   transition: box-shadow 500ms;
 }
 
@@ -410,6 +419,19 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+#develop {
+  position: relative;
+}
+
+#develop > p:first-of-type {
+/*   border: 1px dashed red; */
+  position: absolute;
+  top: 15px;
+  left: 210px;
+  font-size: 14px;
+  color: #F7F7F7;
 }
 
 #write .project:first-child {
@@ -471,7 +493,7 @@ main {
 }
 
 .projects .project:hover {
-  box-shadow: 2px 2px 1px green;
+  box-shadow: 2px 2px 1px #365A66;
 }
 
 .projects .project:hover a:first-child::after {
@@ -484,23 +506,23 @@ main {
   bottom: 5px;
   left: 5px;
   right: 5px;
-  color: white;
+  color: #F7F7F7;
   text-decoration: none;
   transition-property: color;
   transition-duration: 500ms;
 }
 
-.projects .project a:nth-child(2):hover {
-  color: blue;
+/* .projects .project a:nth-child(2):hover {
+  color: #F7F7F7;
 }
 
 .projects .project:hover a:nth-child(2) {
-  color: blue;
-}
+  color: #F7F7F7;
+} */
 
 .icons-container {
   /* 	background-color: red; */
-  border-top: 1px dashed grey;
+  border-top: 1px dashed #365A66;
   margin-top: 21px;
   /* 	padding-top: 10px; */
   font-size: 1.3em;
@@ -508,9 +530,9 @@ main {
 
 .icons-container i {
   display: inline-block;
-  border: 1px solid grey;
-  background-color: grey;
-  color: white;
+  border: 1px solid #365A66;
+  background-color: #365A66;
+  color: #F7F7F7;
   /* 	padding-top: 5px; */
   border-radius: 50%;
   width: 35px;
@@ -530,8 +552,8 @@ main {
 }
 
 .icons-container i:hover {
-  color: grey;
-  background-color: white;
+  color: #365A66;
+  background-color: #F7F7F7;
   /* 	border: 1px solid grey; */
 }
 
@@ -545,7 +567,7 @@ main {
 .lower-activities {
   /* 	border: 1px solid red; */
   width: 100%;
-  margin-bottom: 20/px;
+/*   margin-bottom: 20px; */
 }
 
 .skills>div, .langs>div {
@@ -576,14 +598,14 @@ main {
   float: left;
   width: 60%;
   height: 18px;
-  background-color: red;
+  background-color: #112027;
   border-radius: 4px;
 }
 
 .skills .meter div, .langs .meter div {
   display: inline-block;
   height: 18px;
-  background-color: black;
+  background-color: #365A66;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -616,6 +638,10 @@ main {
   width: 20%;
 }
 
+.contact a {
+  color: #F7F7F7;
+}
+
 
 /*
 *
@@ -636,21 +662,26 @@ main {
 }
 
 .social .card {
-  border: 1px solid black;
-  border-radius: 13px;
-  padding: 12px;
-  margin-bottom: 15px;
+/*   border: 1px solid black; */
+/*   border-radius: 13px; */
+/*   padding: 12px; */
+/*   margin-bottom: 15px; */
 }
 
 .social .card h4 {
-  border-bottom: 1px dashed grey;
-  margin-bottom: 10px;
+  border-bottom: 1px dashed #365A66;
+  padding-bottom: 4px;
+  margin-bottom: 14px;
+}
+
+.social .icons-container {
+  margin-top: 14px;
 }
 
 .social .icons-container i {
-  border: 1px solid grey;
-  background-color: grey;
-  color: white;
+  border: 1px solid #365A66;
+  background-color: #365A66;
+  color: #F7F7F7;
   /* 	padding-top: 5px; */
   border-radius: 50%;
   width: 35px;
@@ -663,15 +694,15 @@ main {
 }
 
 .social .icons-container i:hover {
-  color: grey;
-  background-color: white;
+  color: #365A66;
+  background-color: #F7F7F7;
   /* 	border: 1px solid grey; */
 }
 
 #profiles {
-  border: 1px solid black;
-  border-radius: 13px;
-  padding: 0 12px 12px 12px;
+/*   border: 1px solid black; */
+/*   border-radius: 13px; */
+/*   padding: 0 12px 12px 12px; */
   /* 	margin-bottom: 15px; */
 }
 
@@ -719,7 +750,7 @@ main {
 footer {
   /* 	border: 1px dashed red; */
   background-color: #112027;
-  color: #D8D8D0;
+  color: #F7F7F7;
   opacity: 0.8;
   padding-bottom: 20px;
   padding-top: 20px;
