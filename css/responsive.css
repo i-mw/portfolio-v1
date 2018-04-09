@@ -129,39 +129,48 @@
   *footer
   *
   */
+
+  .left-wrapper, .right-wrapper {
+    width: 50%;
+  }
+
+  
+
   footer .footer-inner {
-    display: flex;
+/*     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-around;
-    height: 300px;
+    height: 300px; */
   }
   footer .footer-inner>div {
-    margin: 0;
+/*     margin: 0; */
   }
+  
+
   footer .quote {
-    order: 1;
+/*     order: 1;
     height: 50%;
     width: 50% !important;
-    padding: 45px 50px 0;
+    padding: 45px 50px 0; */
   }
   footer .contact {
-    order: 2;
+/*     order: 2;
     height: 50%;
     width: 50% !important;
-    padding: 50px 50px 0;
+    padding: 50px 50px 0; */
   }
   footer .host {
-    order: 3;
+/*     order: 3;
     height: 50%;
     width: 50% !important;
-    padding: 50px 50px 0;
+    padding: 50px 50px 0; */
   }
   footer .credit {
-    order: 4;
+/*     order: 4;
     height: 50%;
     width: 50% !important;
-    padding: 30px 50px 0;
+    padding: 30px 50px 0; */
   }
   /*
 *

@@ -2,6 +2,7 @@
 
 /* https://colourco.de/none/%23112027%2C%23203c48%2C%23365a66%2C%23699298%2C%238ab3b7%2C%23c9dcde%2C%23d8d8d0/ */
 
+/* https://colourco.de/none/%23112027%2C%23203c48%2C%23365a66%2C%23699298%2C%238ab3b7%2C%23c9dcde%2C%23d8d8d0%2C%23f7f7f7/ */
 
 /*
 *
@@ -55,6 +56,15 @@ header {
   /* 	opacity: 1; */
   color: #F7F7F7;
   padding-bottom: 300px;
+}
+
+header h1 {
+/*   border: 1px dashed red; */
+  line-height: 40px;
+}
+
+header h3 {
+  line-height: 25px;
 }
 
 header span {
@@ -389,6 +399,12 @@ main {
   border-bottom: 1px dashed #365A66;
   padding-bottom: 5px;
   margin-bottom: 10px;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.projects .card h3 span {
+/*   font-size: 22px; */
 }
 
 .projects .projects-container {
@@ -429,7 +445,7 @@ main {
 /*   border: 1px dashed red; */
   position: absolute;
   top: 15px;
-  left: 210px;
+  left: 220px;
   font-size: 14px;
   color: #F7F7F7;
 }
@@ -672,6 +688,7 @@ main {
   border-bottom: 1px dashed #365A66;
   padding-bottom: 4px;
   margin-bottom: 14px;
+  font-size: 18px
 }
 
 .social .icons-container {
@@ -756,14 +773,50 @@ footer {
   padding-top: 20px;
 }
 
-footer .footer-inner>div {
-  /* 	border: 1px dashed blue; */
+.right-wrapper, .left-wrapper {
+/*   border: 1px dashed blue; */
   width: 100%;
+  float: left;
   text-align: center;
-  margin-top: 30px;
+/*   margin-top: 30px; */
+}
+
+.footer-inner::after {
+  content: "0";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+
+}
+
+.right-wrapper > div, .left-wrapper > div {
+  padding: 30px;
 }
 
 footer .quote {
-  margin-top: 0 !important;
+  font-size: 18px;
+/*   background-color: #8AB3B7; */
+}
+
+footer .host {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .host div:nth-of-type(2) {
+/*   border: 1px dashed red; */
+  margin-top: 10px;
+}
+
+footer .host div:nth-of-type(2) > i::before {
+/*   border: 1px dashed white; */
+/*   display: inline-block; */
+  vertical-align: middle;
+}
+
+
+footer .quote {
+/*   margin-top: 0 !important; */
   /* 	border: 1px dashed red; */
 }
