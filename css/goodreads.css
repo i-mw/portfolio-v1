@@ -4,23 +4,18 @@
 }
 
 #gr_custom_widget_1522949554 {
-/*       border: 1px dashed red; */
-/*   color: red !important; */
   width: 100%;
 }
 
 .gr_custom_container_1522949554 {
   /* customize your Goodreads widget container here*/
-/*   border: 1px solid #365A66; */
   border-radius: 5px;
   padding: 10px 5px 10px 5px;
   background-color: #365A66;
   color: #F7F7F7;
-  /*     width: 100%; */
 }
 
 .gr_custom_container_1522949554 a {
-/*   border: 1px dashed red; */
   color: #F7F7F7;
   font-family: 'Ubuntu Mono', monospace;
   text-decoration: none;

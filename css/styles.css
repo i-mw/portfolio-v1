@@ -1,7 +1,3 @@
-/* https://colourco.de/none/%23112027%2C%23203c48%2C%23365a66%2C%23699298%2C%238ab3b7%2C%23c9dcde/ */
-
-/* https://colourco.de/none/%23112027%2C%23203c48%2C%23365a66%2C%23699298%2C%238ab3b7%2C%23c9dcde%2C%23d8d8d0/ */
-
 /* https://colourco.de/none/%23112027%2C%23203c48%2C%23365a66%2C%23699298%2C%238ab3b7%2C%23c9dcde%2C%23d8d8d0%2C%23f7f7f7/ */
 
 /*
@@ -18,10 +14,6 @@
   box-sizing: border-box;
 }
 
-/* header, main, .left, .projects, .upper-activities, .lower-activities, .upper-social, .lower-social, footer {
-	border: 1px solid #112027;
-} */
-
 body {
   font-family: 'Ubuntu Mono', monospace;
   color: #112027;
@@ -33,12 +25,9 @@ body {
 .inner {
   width: 96%;
   max-width: 400px;
-/*   max-width: 920px; */
   margin-right: auto;
   margin-left: auto;
-/*   padding: 0 2% 0 2%; */
 }
-
 
 /*
 *
@@ -50,16 +39,11 @@ body {
 
 header {
   background: url(../img/mountains.png) center bottom/cover no-repeat;
-  /* 	z-index: 2; */
-  /* 	border: 1px dashed rgba(23, 42, 48, 0.8); */
-  /* 	padding-bottom: 150px; */
-  /* 	opacity: 1; */
   color: #F7F7F7;
   padding-bottom: 300px;
 }
 
 header h1 {
-/*   border: 1px dashed red; */
   line-height: 40px;
 }
 
@@ -98,10 +82,7 @@ header h3 a:active {
 .header-inner div .icon-mw {
   text-align: center;
   display: block;
-  /* 	width: 90px; */
   margin: 0 auto 15px;
-  /* 	background-color: rgba(54, 90, 102, 0.2); */
-  /* 	border-radius: 50%; */
 }
 
 .header-inner div .icon-mw::before {
@@ -125,13 +106,11 @@ header h3 a:active {
 }
 
 .nav {
-  /* 	border: 1px dashed red; */
   text-align: center;
   margin-top: 15px;
 }
 
 .nav a {
-  /* 	display: inline-block; */
   margin-right: 15px;
 }
 
@@ -156,7 +135,6 @@ header h3 a:active {
   line-height: 32px;
 }
 
-
 /*
 *
 *
@@ -166,57 +144,35 @@ header h3 a:active {
 */
 
 main {
-  /* 	bacground-position: 200px 200px, 200px 200px; */
   margin-top: -250px;
-  /* 	z-index: 0; */
 }
 
-.main-inner {
-  /* 	visibility: hidden; */
-/*   border: 1px dashed white; */
-}
+.main-inner {}
 
 .left {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-/*   border: 1px dashed red; */
-/*   margin-bottom: 90px !important; */
-}
-
-.right {
-/*   margin-bottom: 90px; */
 }
 
 .upper-activities {
   order: 1;
   width: 100%;
-/*   margin-bottom: 90px; */
-/*   background-color: pink; */
 }
 
 .projects {
   order: 2;
-/*   margin-bottom: 90px; */
-/*   background-color: red; */
-/*   border: 1px dashed yellow; */
   width: 100%;
 }
 
 .lower-activities {
   order: 3;
-/*   margin-bottom: 90px; */
-/*   background-color: yellow; */
 }
 
-
-.lower-social {
-/*   margin-bottom: 90px; */
-}
+.lower-social {}
 
 .pane {
   margin-bottom: 40px;
-/*   border: 3px solid black; */
 }
 
 .upper-social {
@@ -224,31 +180,26 @@ main {
 }
 
 .card {
-/*   border: 1px dashed white !important; */
   border-radius: 1.5% !important;
   padding: 0 !important;
   margin: 0 !important;
   margin-bottom: 20px !important;
   padding: 12px !important;
-/*   background-color: #699298; */
 }
 
 .projects .card {
-  border: 1px solid #699298 !important;  
+  border: 1px solid #699298 !important;
   background-color: #8AB3B7;
-/*   margin-bottom: 40px !important; */
 }
 
 .activities .card {
-  border: 1px solid #8AB3B7 !important;    
+  border: 1px solid #8AB3B7 !important;
   background-color: #699298;
-/*   margin-bottom: 20px !important; */
 }
 
 .social .card {
-  border: 1px solid #8AB3B7 !important;      
+  border: 1px solid #8AB3B7 !important;
   background-color: #699298;
-/*   margin-bottom: 40px !important; */
 }
 
 .projects .card:hover {
@@ -261,9 +212,7 @@ main {
 
 .card:last-of-type {
   margin-bottom: 0 !important;
-/*   border: 1px solid black !important; */
 }
-
 
 /*
 *
@@ -283,14 +232,7 @@ main {
 }
 
 .upper-activities .personal-photo:hover, .social .personal-photo:hover {
-  border: 2px solid #73999f;  
-}
-
-.activities .card {
-/*   border: 1px solid black;
-  border-radius: 13px;
-  margin-top: 12px;
-  padding: 12px; */
+  border: 2px solid #73999f;
 }
 
 .upper-activities .card:first-of-type {
@@ -323,12 +265,10 @@ main {
 }
 
 .upper-activities .feature, .social .feature {
-/*   margin-bottom: 20px; */
   position: relative;
 }
 
 .upper-activities .feature p:first-of-type, .social .feature p:first-of-type {
-  /* 	border: 1px dashed red; */
   position: absolute;
   top: 11px;
   left: 72px;
@@ -341,41 +281,19 @@ main {
   height: 200px;
   overflow: hidden;
   border-radius: 3px;
-  /* 	border: 1px solid red; */
 }
 
-.upper-activities .feature img, .social .feature img {
-/*   width: 100%; */
-/*   margin-top: -45%; */
-  /* 	margin-left: -50%; */
-  /* 	border: 1px dashed red; */
-}
-
-.upper-activities .feature a:last-of-type{
+.upper-activities .feature a:last-of-type {
   color: #F7F7F7;
 }
 
 .upper-activities .feature a:first-of-type {
   display: block;
-/*   margin-right: 5px;
-  margin-left: 5px; */
 }
-
-/* .social .feature a:first-of-type {
-  display: block;
-  margin-right: 10px;
-  margin-left: 10px;
-} */
 
 .feature .img-container {
-  /* 	border: 1px dashed black; */
   background: url(../img/feature/tawfik.jpg) center center/cover no-repeat scroll;
 }
-
-.feature .img-container:hover {
-/*   box-shadow: 1px 1px 1px green; */
-}
-
 
 /*
 *
@@ -383,43 +301,20 @@ main {
 *
 */
 
-.projects {
-  /* 	border: 1px solid red; */
-}
-
-.projects .card {
-/*   border: 1px solid black; */
-/*   border-radius: 13px; */
-/*   padding: 12px; */
-/*   margin-bottom: 15px; */
-}
-
-.projects .card:last-of-type {
-/*   margin-bottom: 0; */
-}
-
 .projects .card h3 {
   border-bottom: 1px dashed #365A66;
   padding-bottom: 5px;
-/*   margin-bottom: 10px; */
   line-height: 24px;
   font-size: 20px;
 }
 
-.projects .card h3 span {
-/*   font-size: 22px; */
-}
-
 .projects .projects-container {
   width: 100%;
-  /* 	border: 1px dashed red; */
-  /* 	background-color: yellow; */
   text-align: center;
 }
 
 .projects .project {
   width: 98%;
-  /* 	min-width: 185px; */
   height: 150px;
   margin-right: 1%;
   margin-left: 1%;
@@ -429,7 +324,6 @@ main {
   position: relative;
   overflow: hidden;
   border: 1px solid #365A66;
-/*   box-shadow: 1px 1px 1px red; */
   transition: box-shadow 400ms;
 }
 
@@ -445,8 +339,7 @@ main {
   position: relative;
 }
 
-#develop > p:first-of-type {
-/*   border: 1px dashed red; */
+#develop>p:first-of-type {
   position: absolute;
   top: 15px;
   left: 220px;
@@ -522,15 +415,12 @@ main {
 }
 
 .projects .project a:nth-child(2) {
-  /* 	border: 1px dashed black; */
   position: absolute;
   bottom: 5px;
   left: 5px;
   right: 5px;
   color: #F7F7F7;
   text-decoration: none;
-/*   transition-property: color;
-  transition-duration: 500ms; */
 }
 
 .projects .project:active a:nth-child(2) {
@@ -541,19 +431,9 @@ main {
   color: #D8D8D0;
 }
 
-/* .projects .project a:nth-child(2):hover {
-  color: #F7F7F7;
-}
-
-.projects .project:hover a:nth-child(2) {
-  color: #F7F7F7;
-} */
-
 .icons-container {
-  /* 	background-color: red; */
   border-top: 1px dashed #365A66;
   margin-top: 21px;
-  /* 	padding-top: 10px; */
   font-size: 1.3em;
 }
 
@@ -562,7 +442,6 @@ main {
   border: 1px solid #365A66;
   background-color: #365A66;
   color: #F7F7F7;
-  /* 	padding-top: 5px; */
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -572,24 +451,20 @@ main {
   line-height: 33.5px;
   transition-property: color background-color;
   transition-duration: 500ms;
-  /* 	border: 1px dashed black; */
 }
 
 .icons-container i.icon::before {
   line-height: 33.5px;
-  /* 	border: 1px dashed green; */
 }
 
 .icons-container i:hover {
   color: #365A66;
   background-color: #F7F7F7;
-  /* 	border: 1px solid grey; */
 }
 
 .activities a:active {
   color: #112027 !important;
-} 
-
+}
 
 /*
 *
@@ -598,13 +473,10 @@ main {
 */
 
 .lower-activities {
-  /* 	border: 1px solid red; */
   width: 100%;
-/*   margin-bottom: 20px; */
 }
 
 .skills>div, .langs>div {
-  /* 	border: 1px dashed yellow; */
   margin-bottom: 15px;
 }
 
@@ -624,7 +496,6 @@ main {
   float: left;
   width: 20%;
   text-align: center;
-  /* 	border: 1px dashed red; */
 }
 
 .skills .meter, .langs .meter {
@@ -675,18 +546,17 @@ main {
   color: #F7F7F7;
 }
 
-  .activities .contact {
-    display: none;
-  }
+.activities .contact {
+  display: none;
+}
 
 .langs {
   margin-bottom: 0 !important;
 }
 
-  .social .contact {
-    display: block;
-  }
-
+.social .contact {
+  display: block;
+}
 
 /*
 *
@@ -694,24 +564,8 @@ main {
 *
 */
 
-
-.upper-social {
-  /* 	border: 1px dashed red; */
-}
-
-.lower-social {
-  /* 	border: 1px dashed red; */
-}
-
 .social .personal-photo, .social .feature {
   display: none;
-}
-
-.social .card {
-/*   border: 1px solid black; */
-/*   border-radius: 13px; */
-/*   padding: 12px; */
-/*   margin-bottom: 15px; */
 }
 
 .social .card h4 {
@@ -729,7 +583,6 @@ main {
   border: 1px solid #365A66;
   background-color: #365A66;
   color: #F7F7F7;
-  /* 	padding-top: 5px; */
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -743,14 +596,6 @@ main {
 .social .icons-container i:hover {
   color: #365A66;
   background-color: #F7F7F7;
-  /* 	border: 1px solid grey; */
-}
-
-#profiles {
-/*   border: 1px solid black; */
-/*   border-radius: 13px; */
-/*   padding: 0 12px 12px 12px; */
-  /* 	margin-bottom: 15px; */
 }
 
 #profiles .icons-container {
@@ -769,13 +614,7 @@ main {
 *widgets
 */
 
-.goodreads-stream, .imdb-stream {
-  /* 	width: 100%; */
-  /* 	border: 1px dashed red */
-}
-
 .goodreads-stream iframe, .imdb-stream iframe {
-  /* 	border: 3px solid blue !important; */
   width: 100%;
   height: 300px;
   border: none;
@@ -786,18 +625,12 @@ main {
 }
 
 .twitter-stream {
-/*   border: 1px dashed red; */
   overflow-x: auto;
 }
 
 .imdb-stream {
-/*   border: 1px dashed red; */
   overflow: auto;
 }
-
-/* .timeline-body {
-  border: 1px dashed red;
-} */
 
 /*
 *
@@ -808,7 +641,6 @@ main {
 */
 
 footer {
-  /* 	border: 1px dashed red; */
   background-color: #112027;
   color: #F7F7F7;
   opacity: 0.8;
@@ -817,11 +649,9 @@ footer {
 }
 
 .right-wrapper, .left-wrapper {
-/*   border: 1px dashed blue; */
   width: 100%;
   float: left;
   text-align: center;
-/*   margin-top: 30px; */
 }
 
 .footer-inner::after {
@@ -830,16 +660,14 @@ footer {
   height: 0;
   visibility: hidden;
   clear: both;
-
 }
 
-.right-wrapper > div, .left-wrapper > div {
+.right-wrapper>div, .left-wrapper>div {
   padding: 30px;
 }
 
 footer .quote {
   font-size: 18px;
-/*   background-color: #8AB3B7; */
 }
 
 footer .host {
@@ -848,58 +676,46 @@ footer .host {
 }
 
 footer .host div:nth-of-type(2) {
-/*   border: 1px dashed red; */
   margin-top: 10px;
 }
 
-footer .host div:nth-of-type(2) > i::before {
-/*   border: 1px dashed white; */
-/*   display: inline-block; */
+footer .host div:nth-of-type(2)>i::before {
   vertical-align: middle;
 }
-
-
-footer .quote {
-/*   margin-top: 0 !important; */
-  /* 	border: 1px dashed red; */
-}
-
-
-
 
 /*
 --------------------------------------------------------------------------
 -----built by MW "Mustafa Wahba"------------------------------------------
---------------------------------------------------------------------------   
+--------------------------------------------------------------------------
 
 
-                                 ###   ###                             
-                                ####   ###         ###                 
-                               #####   ###           ###               
-                              ######   ###             ###             
-                             #######   ###              ###            
-                ##          ###  ###   ###                ###          
-               ######      ###   ###   ###                 ###         
-              ###  #####  ###    ###   ###                  ###        
-             ###      ######     ###   ###                   ###       
-            ###         ###      ###   ###                   ###       
-           ###           #       ###   ###                   ###       
-           ###                   ###   ###                   ###       
-           ###                   ###   ###                   ###       
-           ###                   ###   ###       #           ###       
-           ###                   ###   ###      ###         ###        
-           ###                   ###   ###     ######      ###         
-            ###                  ###   ###    ###  #####  ###          
-             ###                 ###   ###   ###      ######           
-              ###                ###   ###  ###          ##            
-                ###              ###   #######                         
-                 ###             ###   ######                          
-                   ###           ###   #####                           
-                     ###         ###   ####                            
                                  ###   ###
-                   
-                                
+                                ####   ###         ###
+                               #####   ###           ###
+                              ######   ###             ###
+                             #######   ###              ###
+                ##          ###  ###   ###                ###
+               ######      ###   ###   ###                 ###
+              ###  #####  ###    ###   ###                  ###
+             ###      ######     ###   ###                   ###
+            ###         ###      ###   ###                   ###
+           ###           #       ###   ###                   ###
+           ###                   ###   ###                   ###
+           ###                   ###   ###                   ###
+           ###                   ###   ###       #           ###
+           ###                   ###   ###      ###         ###
+           ###                   ###   ###     ######      ###
+            ###                  ###   ###    ###  #####  ###
+             ###                 ###   ###   ###      ######
+              ###                ###   ###  ###          ##
+                ###              ###   #######
+                 ###             ###   ######
+                   ###           ###   #####
+                     ###         ###   ####
+                                 ###   ###
+
+
 --------------------------------------------------------------------------
 -----https://i-mw.github.io-----------------------------------------------
--------------------------------------------------------------------------- 
+--------------------------------------------------------------------------
 */

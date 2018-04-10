@@ -1,27 +1,21 @@
 /***** TINY SCREENS *****/
 @media screen and (max-width: 170px) {
+
   .upper-activities .personal-photo, .social .personal-photo {
     width: 100px;
   }
+
 }
 
-
-/***** TABLET *****/
+/***** TABLET & Desktop*****/
 @media screen and (min-width: 600px) {
-
-  /*
-  *
-  *header
-  *
-  */
-
-
 
   /*
   *
   *main container
   *
   */
+
   .inner {
     width: 92%;
     max-width: 850px;
@@ -30,8 +24,6 @@
   .projects {
     order: 1;
     width: 65.6%;
-/*     margin-bottom: 0; */
-/*     margin-right: 4%; */
   }
 
   .upper-activities {
@@ -39,14 +31,12 @@
     width: 30.4%;
     max-width: 220px;
     margin-bottom: 20px;
-    /*     flex-shrink: -1; */
   }
 
   .lower-activities {
     order: 3;
     width: 30.4%;
-    max-width: 220px; 
-/*     margin-bottom: 0;    */
+    max-width: 220px;
   }
 
   .upper-social {
@@ -60,55 +50,43 @@
     float: left;
   }
 
+  .pane {
+    margin-bottom: 90px;
+  }
 
+  .upper-activities {
+    margin-bottom: 20px;
+  }
 
+  .upper-social {
+    margin-bottom: 40px;
+  }
 
+  .projects .card {
+    margin-bottom: 40px !important;
+  }
 
+  .activities .card {
+    margin-bottom: 20px !important;
+  }
 
+  .social .card {
+    margin-bottom: 40px !important;
+  }
 
-.pane {
-  margin-bottom: 90px;
-}
-
-.upper-activities {
-  margin-bottom: 20px;
-}
-
-.upper-social {
-  margin-bottom: 40px;
-}
-
-.projects .card {
-  margin-bottom: 40px !important;
-}
-
-.activities .card {
-  margin-bottom: 20px !important;
-}
-
-.social .card {
-  margin-bottom: 40px !important;
-}
-
-.card:last-of-type {
-  margin-bottom: 0 !important;
-}
-
-
-
-      
-
+  .card:last-of-type {
+    margin-bottom: 0 !important;
+  }
 
   /*
   *left pane
   */
+
   .left {
     flex-direction: column;
     height: 1904px;
     position: relative;
     align-content: space-between;
-/*     border: 2px dashed black; */
-    /*     align-items: flex-start; */
   }
 
   .activities .contact {
@@ -124,121 +102,41 @@
   .projects .projects-container {
     text-align: center;
   }
+
   #draw .projects-container {
     text-align: left;
     margin-left: 1.4%;
   }
+
   .projects .project {
     width: 46%;
   }
+
   .projects .project a:nth-child(2) {
     text-align: center;
   }
 
-  /* upper activities pane */
-
-
-  /* lower activities pane */
-
+  /* activities panes */
 
   /*
-  *right pane
-  */
-  .right {
-    width: 100%;
-    overflow: auto;
-/*     background-color: yellow; */
-  }
-  
-
-
-
-  /* upper social pane */
-
-
-  /* lower social pane */
-
-    /*   .right::after {
-      content: ".";
-      visibility: hidden;
-      height: 0;
-       display: block;
-    } */
-    /*
   *
   *
-  *footer
+  * activities containers fixation
   *
   *
   */
 
-  /*
-  *
-  *footer
-  *
-  */
+  /* for 2nd and 3rd states .. only to satisfy old firefox */
 
-  .left-wrapper, .right-wrapper {
-    width: 50%;
-  }
-
-  
-
-  footer .footer-inner {
-/*     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-    height: 300px; */
-  }
-  footer .footer-inner>div {
-/*     margin: 0; */
-  }
-  
-
-  footer .quote {
-/*     order: 1;
-    height: 50%;
-    width: 50% !important;
-    padding: 45px 50px 0; */
-  }
-  footer .contact {
-/*     order: 2;
-    height: 50%;
-    width: 50% !important;
-    padding: 50px 50px 0; */
-  }
-  footer .host {
-/*     order: 3;
-    height: 50%;
-    width: 50% !important;
-    padding: 50px 50px 0; */
-  }
-  footer .credit {
-/*     order: 4;
-    height: 50%;
-    width: 50% !important;
-    padding: 30px 50px 0; */
-  }
-  /*
-*
-*
-* activities containers fixation
-*
-*
-*/
-
-/* for 2nd and 3rd states .. only to satisfy old firefox */
-
-   .projects-fixed-scroll {
-    position: absolute; 
+  .projects-fixed-scroll {
+    position: absolute;
     left: 0;
     top: 0;
   }
 
-/* 2nd state */
+  /* 2nd state */
 
-   .upper-activities-fixed {
+  .upper-activities-fixed {
     position: fixed;
     right: 4%;
     width: 27.968%;
@@ -250,18 +148,16 @@
     right: 4%;
     width: 27.968%;
     max-width: 220px;
-    margin-bottom:0;
+    margin-bottom: 0;
     bottom: 0;
   }
 
-/* 3rd state */
-
+  /* 3rd state */
 
   .upper-activities-scroll {
     position: absolute;
     right: 0;
-    margin-bottom:110px;
-/*     padding-bottom: 15px; */
+    margin-bottom: 110px;
   }
 
   .lower-activities-scroll {
@@ -270,47 +166,60 @@
     right: 0;
   }
 
+  /*
+  *right pane
+  */
 
+  .right {
+    width: 100%;
+    overflow: auto;
+  }
 
+  /*
+  *
+  *footer
+  *
+  */
+
+  .left-wrapper, .right-wrapper {
+    width: 50%;
+  }
 
 }
-
-
-
 
 /*
 --------------------------------------------------------------------------
 -----built by MW "Mustafa Wahba"------------------------------------------
---------------------------------------------------------------------------   
+--------------------------------------------------------------------------
 
 
-                                 ###   ###                             
-                                ####   ###         ###                 
-                               #####   ###           ###               
-                              ######   ###             ###             
-                             #######   ###              ###            
-                ##          ###  ###   ###                ###          
-               ######      ###   ###   ###                 ###         
-              ###  #####  ###    ###   ###                  ###        
-             ###      ######     ###   ###                   ###       
-            ###         ###      ###   ###                   ###       
-           ###           #       ###   ###                   ###       
-           ###                   ###   ###                   ###       
-           ###                   ###   ###                   ###       
-           ###                   ###   ###       #           ###       
-           ###                   ###   ###      ###         ###        
-           ###                   ###   ###     ######      ###         
-            ###                  ###   ###    ###  #####  ###          
-             ###                 ###   ###   ###      ######           
-              ###                ###   ###  ###          ##            
-                ###              ###   #######                         
-                 ###             ###   ######                          
-                   ###           ###   #####                           
-                     ###         ###   ####                            
                                  ###   ###
-                   
-                                
+                                ####   ###         ###
+                               #####   ###           ###
+                              ######   ###             ###
+                             #######   ###              ###
+                ##          ###  ###   ###                ###
+               ######      ###   ###   ###                 ###
+              ###  #####  ###    ###   ###                  ###
+             ###      ######     ###   ###                   ###
+            ###         ###      ###   ###                   ###
+           ###           #       ###   ###                   ###
+           ###                   ###   ###                   ###
+           ###                   ###   ###                   ###
+           ###                   ###   ###       #           ###
+           ###                   ###   ###      ###         ###
+           ###                   ###   ###     ######      ###
+            ###                  ###   ###    ###  #####  ###
+             ###                 ###   ###   ###      ######
+              ###                ###   ###  ###          ##
+                ###              ###   #######
+                 ###             ###   ######
+                   ###           ###   #####
+                     ###         ###   ####
+                                 ###   ###
+
+
 --------------------------------------------------------------------------
 -----https://i-mw.github.io-----------------------------------------------
--------------------------------------------------------------------------- 
+--------------------------------------------------------------------------
 */
