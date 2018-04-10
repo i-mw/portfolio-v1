@@ -180,6 +180,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+/*   border: 1px dashed red; */
 /*   margin-bottom: 90px !important; */
 }
 
@@ -198,6 +199,8 @@ main {
   order: 2;
 /*   margin-bottom: 90px; */
 /*   background-color: red; */
+/*   border: 1px dashed yellow; */
+  width: 100%;
 }
 
 .lower-activities {
