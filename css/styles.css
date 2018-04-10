@@ -769,6 +769,16 @@ main {
   height: 333px;
 }
 
+.twitter-stream {
+/*   border: 1px dashed red; */
+  overflow-x: auto;
+}
+
+.imdb-stream {
+/*   border: 1px dashed red; */
+  overflow: auto;
+}
+
 /* .timeline-body {
   border: 1px dashed red;
 } */
