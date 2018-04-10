@@ -1,7 +1,8 @@
 /***** TINY SCREENS *****/
 @media screen and (max-width: 170px) {
 
-  .upper-activities .personal-photo, .social .personal-photo {
+  .upper-activities .personal-photo,
+  .social .personal-photo {
     width: 100px;
   }
 
@@ -10,12 +11,12 @@
 /***** TABLET & Desktop*****/
 @media screen and (min-width: 600px) {
 
+
   /*
   *
   *main container
   *
   */
-
   .inner {
     width: 92%;
     max-width: 850px;
@@ -78,10 +79,10 @@
     margin-bottom: 0 !important;
   }
 
+
   /*
   *left pane
   */
-
   .left {
     flex-direction: column;
     height: 1904px;
@@ -97,8 +98,8 @@
     display: none;
   }
 
-  /* projects pane */
 
+  /* projects pane */
   .projects .projects-container {
     text-align: center;
   }
@@ -116,6 +117,7 @@
     text-align: center;
   }
 
+
   /* activities panes */
 
   /*
@@ -127,15 +129,14 @@
   */
 
   /* for 2nd and 3rd states .. only to satisfy old firefox */
-
   .projects-fixed-scroll {
     position: absolute;
     left: 0;
     top: 0;
   }
 
-  /* 2nd state */
 
+  /* 2nd state */
   .upper-activities-fixed {
     position: fixed;
     right: 4%;
@@ -152,8 +153,8 @@
     bottom: 0;
   }
 
-  /* 3rd state */
 
+  /* 3rd state */
   .upper-activities-scroll {
     position: absolute;
     right: 0;
@@ -166,26 +167,28 @@
     right: 0;
   }
 
+
   /*
   *right pane
   */
-
   .right {
     width: 100%;
     overflow: auto;
   }
+
 
   /*
   *
   *footer
   *
   */
-
-  .left-wrapper, .right-wrapper {
+  .left-wrapper,
+  .right-wrapper {
     width: 50%;
   }
 
 }
+
 
 /*
 --------------------------------------------------------------------------
