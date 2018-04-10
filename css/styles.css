@@ -456,7 +456,7 @@ main {
   text-align: center;
   vertical-align: middle;
   line-height: 33.5px;
-  transition-property: color background-color;
+  transition-property: color, background-color;
   transition-duration: 500ms;
 }
 
@@ -493,7 +493,6 @@ main {
   content: ".";
   display: block;
   visibility: hidden;
-  hight: 0;
   overflow: hidden;
 }
 
@@ -603,7 +602,7 @@ main {
   text-align: center;
   vertical-align: middle;
   line-height: 33.5px;
-  transition-property: color background-color;
+  transition-property: color, background-color;
   transition-duration: 500ms;
 }
 
@@ -629,7 +628,8 @@ main {
 *widgets
 */
 .goodreads-stream iframe,
-.imdb-stream iframe {
+.imdb-stream iframe,
+.soundcloud-stream iframe {
   width: 100%;
   height: 300px;
   border: none;
