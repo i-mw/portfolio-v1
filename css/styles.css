@@ -215,12 +215,12 @@ main {
 }
 
 .pane {
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 /*   border: 3px solid black; */
 }
 
 .upper-social {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -228,7 +228,7 @@ main {
   border-radius: 1.5% !important;
   padding: 0 !important;
   margin: 0 !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 20px !important;
   padding: 12px !important;
 /*   background-color: #699298; */
 }
@@ -236,19 +236,19 @@ main {
 .projects .card {
   border: 1px solid #699298 !important;  
   background-color: #8AB3B7;
-  margin-bottom: 40px !important;
+/*   margin-bottom: 40px !important; */
 }
 
 .activities .card {
   border: 1px solid #8AB3B7 !important;    
   background-color: #699298;
-  margin-bottom: 20px !important;
+/*   margin-bottom: 20px !important; */
 }
 
 .social .card {
   border: 1px solid #8AB3B7 !important;      
   background-color: #699298;
-  margin-bottom: 40px !important;
+/*   margin-bottom: 40px !important; */
 }
 
 .projects .card:hover {
@@ -678,6 +678,10 @@ main {
   .activities .contact {
     display: none;
   }
+
+.langs {
+  margin-bottom: 0 !important;
+}
 
   .social .contact {
     display: block;

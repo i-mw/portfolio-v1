@@ -60,6 +60,42 @@
     float: left;
   }
 
+
+
+
+
+
+
+.pane {
+  margin-bottom: 90px;
+}
+
+.upper-activities {
+  margin-bottom: 20px;
+}
+
+.upper-social {
+  margin-bottom: 40px;
+}
+
+.projects .card {
+  margin-bottom: 40px !important;
+}
+
+.activities .card {
+  margin-bottom: 20px !important;
+}
+
+.social .card {
+  margin-bottom: 40px !important;
+}
+
+.card:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+
+
       
 
 
